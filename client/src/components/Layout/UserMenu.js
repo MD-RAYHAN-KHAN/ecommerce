@@ -1,27 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-const UserMenu = () => {
-  return (
-    <div>
-      <div className="text-center dashboard-menu">
-        <div className="list-group">
-          <h4>Dashboard</h4>
-          <NavLink
-            to="/dashboard/user/profile"
-            className="list-group-item list-group-item-action"
-          >
-            Profile
-          </NavLink>
-          <NavLink
-            to="/dashboard/user/orders"
-            className="list-group-item list-group-item-action"
-          >
-            Orders
-          </NavLink>
-        </div>
-      </div>
-    </div>
-  );
-};
+import { useState, useEffect } from "react";
+import { useAuth } from "../../context/auth";
+import { Outlet } from "react-router-dom";
+import axios from "axios";
+import Spinner from "../Spinner";
 
-export default UserMenu;
+export default function PrivateRoute() {
+  const [ok, setOk] = useState(false);
+  const [auth] = useAuth();
+
+  useEffect(() => {
+    const authCheck = async () => {
+      const res = await axios.get("/api/v1/auth/admin-auth");
+      if (res.data.ok) {
+        setOk(true);
+      } else {
+        setOk(false);
+      }
+    };
+    if (auth?.token) authCheck();
+  }, [auth?.token]);
+
+  return ok ? <Outlet /> : <Spinner path="" />;
+}

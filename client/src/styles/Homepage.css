@@ -1,7 +1,154 @@
 .banner-img {
   margin-top: 60px;
 }
+.banner {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  background-size: cover;
+  min-height: 550px;
+}
 
+.banner .block {
+  padding: 80px 0px 160px;
+}
+
+.block > h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
+  color: #223a66;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+}
+
+.text-color {
+  color: #223a66;
+}
+
+.text-color-2 {
+  color: #e12454;
+}
+
+.divider {
+  width: 40px;
+  height: 5px;
+  background: #e12454;
+}
+.features {
+  position: relative;
+  top: -70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+  flex-basis: 33.33%;
+  padding: 45px 30px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.feature-item .feature-icon i {
+  font-size: 50px;
+  color: #223a66;
+}
+
+.feature-item h4 {
+  color: #223a66;
+}
+
+.feature-item p {
+  font-size: 14px;
+}
+
+.feature-section.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+
+@media (max-width: 480px) {
+  .fs-h1{
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  .carousel-caption {
+    position: relative;
+    bottom: 0%;
+    left: 5%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #223A66;
+    text-align: left;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .fs-h1{
+    font-size: 40px !important;
+    font-weight: bold;
+  }
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+  .carousel-caption {
+    position: absolute;
+    bottom: 6% !important;
+    left: 5% !important; 
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #223A66;
+    text-align: left;
+  }
+  
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .fs-h1{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  .fs-5 {
+    font-size: 1.2rem !important;
+  }
+  .carousel-caption {
+    position: absolute;
+    bottom: 18%;
+    left: 8%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #223A66;
+    text-align: left;
+  }
+  .feature-item {
+    flex-basis: 33.33%;
+    margin: 0px 20px;
+    margin-bottom: 0px;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  }
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 18%;
+  left: 8%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #223A66;
+  text-align: left;
+}
+.letter-spacing {
+  letter-spacing: 2px;
+}
+.about-img img {
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 .home-page h1 {
   color: gray;
   font-family: "Playfair Display", serif;
@@ -78,4 +225,92 @@ filters
   color: green;
   font-weight: bold;
   font-size: 20px !important;
+}
+
+.w-hours li {
+  padding: 6px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.counter-stat {
+  text-align: center;
+  padding: 55px 0px 40px 0px;
+  position: relative;
+}
+
+.counter-stat i {
+  display: block;
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 70px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  -webkit-transform: translateY(25px);
+  transform: translateY(25px);
+}
+
+.counter-stat span {
+  font-size: 70px;
+  color: #fff;
+}
+
+.counter-stat p {
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mb--80 {
+  margin-bottom: -80px;
+}
+
+.service {
+  padding-top: 180px;
+}
+
+.service-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.service-item .icon > h4 {
+  font-weight: bolder;
+  font-family: "Exo", sans-serif;
+  color: #222;
+  padding-left: 20px;
+}
+
+.service-block {
+  padding: 20px;
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 38px rgba(21, 40, 82, 0.07);
+}
+
+/* motivation section start */
+.testimonial-block.style-2 {
+  background: #fff;
+  padding: 30px;
+  margin: 0px 4px;
+  margin-bottom: 30px;
+}
+
+.testimonial-block.style-2 .testimonial-thumb {
+  float: left;
+}
+
+.testimonial-block.style-2 .testimonial-thumb img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border: 5px solid #eff0f3;
+  margin-top: -5px;
+}
+
+.testimonial-block.style-2 .client-info p {
+  clear: both;
+  background: transparent;
 }

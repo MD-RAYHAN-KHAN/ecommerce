@@ -20,6 +20,7 @@
     "concurrently": "^8.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "eslint-plugin-react-hooks": "^5.0.0-canary-0fb5b61ac-20230814",
     "express": "^4.18.2",
     "express-formidable": "^1.2.0",
     "jsonwebtoken": "^9.0.1",
@@ -28,6 +29,5 @@
     "nodemon": "^3.0.1",
     "react-icons": "^4.10.1",
     "slugify": "^1.6.6"
-  },
-  "devDependencies": {}
+  }
 }

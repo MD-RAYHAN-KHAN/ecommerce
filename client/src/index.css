@@ -1,37 +1,186 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap');
+/* 
+font-family: 'Exo', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+html {
+  overflow-x: hidden;
+}
+body {
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: #6F8BA4;
+  font-weight: 400;
+}
+.text-justify{
+  text-align: justify;
+}
+
+.fs-h1{
+  font-size: 60px;
+  font-weight: bolder;
+}
+.fs-h2{
+  font-size: 45px;
+  font-weight: bolder;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  color: #223a66;
+}
+p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #223a66;
+  letter-spacing: 1px;
+}
+.divider {
+  width: 45px;
+  height: 5px;
+  background: #e12454;
+}
+.text-center{
+  text-align: center !important;
+}
+
+.btn-1 {
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: .75rem 2rem;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all .35s ease;
+}
+
+.btn-1.btn-icon i {
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+  padding-left: 15px;
+}
+
+.btn-1:focus {
+  outline: 0px;
+  box-shadow: none;
+}
+
+.btn-main {
+  background: #223a66;
+  color: #fff;
+  border-color: #223a66;
+}
+
+.btn-main:hover {
+  background: #3DA9F2;
+  border-color: #3DA9F2;
+  color: #e3dddd;
+}
+
+.btn-main-2 {
+  background: #3DA9F2;
+  border-color: #3DA9F2;
+  color: #e3dddd;
+}
+
+.btn-main-2:hover {
+  background: #223a66;
+  color: #e3dddd;
+  border-color: #223a66;
+}
+
+.btn-solid-border {
+  border: 2px solid #223a66;
+  background: transparent;
+  color: #223a66;
+}
+
+.btn-solid-border:hover {
+  border: 2px solid #223a66;
+  color: #fff;
+  background: #223a66;
+}
+
+.btn-solid-border:hover.btn-icon i {
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.btn-solid-border.btn-icon i {
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #222;
+  border-color: #6F8BA4;
+}
+
+.btn-transparent:hover {
+  background: #6F8BA4;
+  color: #fff;
+}
+
+.btn-round {
+  border-radius: 4px;
+}
+
+.btn.active:focus, .btn:active:focus, .btn:focus {
+  outline: 0;
 }
 
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
 
 /* //navbar css */
+.bg-navbar{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity)) !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  --webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 .navbar {
-  font-family: "Poppins", sans-serif;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity)) !important;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
-  line-height: 26px;
-  text-transform: uppercase;
-  box-shadow: 0 8px 6px -6px gray;
-  --webkit-box-shadow: 0 8px 6px -6px gray;
-  border-bottom: solid gray !important;
+  font-weight: bold;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  --webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .nav-link {
   font-weight: 300 !important;
 }
-
-.active {
-  border-bottom: 2px solid black;
+.mt-minus-10{
+  margin-top: -20px;
 }
-
 .navbar-brand {
   font-weight: 700;
   font-family: "roboto", sans-serif;
   letter-spacing: 3px;
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .navbar-brand {
+    float: right;
+    font-weight: 700;
+    font-family: "roboto", sans-serif;
+    letter-spacing: 3px;
+  }
 }
 
 .search-form {
@@ -51,27 +200,41 @@
 /* =============================
 ==========footer============= */
 
-.footer {
-  color: white;
-  padding: 25px;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000);
-}
+.footer h4 {
+    font-weight: bolder;
+    font-family: "Exo", sans-serif;
+    color: #222;
+  }
 
 .footer a {
   text-decoration: none;
-  color: white;
-  padding: 10px;
+  color: #223a66;
 }
 
 .footer a:hover {
-  color: #ffefba;
-  border-bottom: 1px solid #ffefba;
+  color: #222;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.subscribe {
+  position: relative;
+}
+
+.subscribe .form-control {
+  border-radius: 50px;
+  height: 50px;
+  padding-left: 25px;
+  /* border-color: #eee; */
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.subscribe .btn {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+}
+.footer-btm{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 /* =================================
 ======== page not found css ======= */
@@ -141,4 +304,52 @@
   background-color: #434343 !important;
   color: white;
   padding: 20px 0px;
+}
+
+
+
+
+/* service seciton */
+service {
+  padding-top: 180px;
+}
+
+.service .service-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.service .icon {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.service i {
+  color: #e12454;
+}
+
+.service h4 {
+  padding-left: 20px;
+}
+
+.service .content {
+  clear: both;
+}
+
+.service-block {
+  padding: 20px;
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 38px rgba(21, 40, 82, 0.07);
+}
+
+.service-block img {
+  width: 100%;
+  margin-top: -60px;
+  border: 5px solid #fff;
+}
+
+.department-service {
+  margin-bottom: 40px;
 }
