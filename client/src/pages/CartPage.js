@@ -4,7 +4,7 @@ import { useCart } from "../context/cart";
 import { useAuth } from "../context/auth";
 import { useNavigate } from "react-router-dom";
 import DropIn from "braintree-web-drop-in-react";
-import { AiFillWarning } from "react-icons/ai";
+// import { AiFillWarning } from "react-icons/ai";
 import axios from "axios";
 import toast from "react-hot-toast";
 import "../styles/CartStyles.css";
@@ -23,15 +23,17 @@ const CartPage = () => {
       let total = 0;
       cart?.map((item) => {
         total = total + item.price;
+        return null; // Add a return statement here
       });
       return total.toLocaleString("en-US", {
         style: "currency",
-        currency: "USD",
+        currency: "BDT",
       });
     } catch (error) {
       console.log(error);
     }
   };
+
   //detele item
   const removeCartItem = (pid) => {
     try {
@@ -78,7 +80,7 @@ const CartPage = () => {
     }
   };
   return (
-    <Layout>
+    <Layout title={"Accept All - Payment Method"}>
       <div className=" cart-page">
         <div className="row">
           <div className="col-md-12">
@@ -88,9 +90,8 @@ const CartPage = () => {
                 : `Hello  ${auth?.token && auth?.user?.name}`}
               <p className="text-center">
                 {cart?.length
-                  ? `You Have ${cart.length} items in your cart ${
-                      auth?.token ? "" : "please login to checkout !"
-                    }`
+                  ? `You Have ${cart.length} items in your cart ${auth?.token ? "" : "please login to checkout !"
+                  }`
                   : " Your Cart Is Empty"}
               </p>
             </h1>
@@ -137,7 +138,7 @@ const CartPage = () => {
                     <h4>Current Address</h4>
                     <h5>{auth?.user?.address}</h5>
                     <button
-                      className="btn btn-outline-warning"
+                      className="btn btn-outline-dark"
                       onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
@@ -183,7 +184,7 @@ const CartPage = () => {
                     />
 
                     <button
-                      className="btn btn-primary"
+                      className="btn btn-info"
                       onClick={handlePayment}
                       disabled={loading || !instance || !auth?.user?.address}
                     >

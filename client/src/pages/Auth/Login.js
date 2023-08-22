@@ -3,13 +3,16 @@ import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import "../../styles/AuthStyles.css";
 import { useAuth } from "../../context/auth";
+
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [auth, setAuth] = useAuth();
-
+  const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -40,11 +43,11 @@ const Login = () => {
   };
   return (
     <Layout title="Register - Ecommer App">
-      <div className="form-container " style={{ minHeight: "90vh" }}>
-        <form onSubmit={handleSubmit}>
-          <h4 className="title">LOGIN FORM</h4>
+      <div id="form-login " className="form-container" style={{ minHeight: "90vh" }}>
+        <form onSubmit={handleSubmit} className="container">
+          <h4 className="title py-4">Family Care</h4>
 
-          <div className="mb-3">
+          <div className="mb-4">
             <input
               type="email"
               autoFocus
@@ -56,7 +59,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="relative mb-3">
             <input
               type="password"
               value={password}
@@ -66,8 +69,21 @@ const Login = () => {
               placeholder="Enter Your Password"
               required
             />
+            {visible ? (
+              <AiOutlineEye
+                className="absolute cursor-pointer"
+                size={25}
+                onClick={() => setVisible(false)}
+              />
+            ) : (
+              <AiOutlineEyeInvisible
+                className="absolute cursor-pointer"
+                size={25}
+                onClick={() => setVisible(true)}
+              />
+            )}
           </div>
-          <div className="mb-3">
+          {/* <div className="mb-3">
             <button
               type="button"
               className="btn forgot-btn"
@@ -77,11 +93,20 @@ const Login = () => {
             >
               Forgot Password
             </button>
-          </div>
+          </div> */}
 
-          <button type="submit" className="btn btn-primary">
-            LOGIN
-          </button>
+          <div className="text-center">
+            <button type="submit" className="btn btn-outline-dark px-4 my-2">
+              LOGIN
+            </button>
+          </div>
+          <div className="forgatepass">
+            <p onClick={() => {
+              navigate("/forgot-password");
+            }}>
+              Forgot Password?
+            </p>
+          </div>
         </form>
       </div>
     </Layout>

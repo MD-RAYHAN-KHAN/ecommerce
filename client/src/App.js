@@ -1,11 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import MedicineProduct from "./pages/MedicineProduct";
+import Nurse from "./pages/Nurse";
+import Blog from "./pages/blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Policy from "./pages/Policy";
 import Pagenotfound from "./pages/PageNotFound";
 import Register from "./pages/Auth/Register";
+import DocRegister from "./pages/Auth/DocRegister";
+import NurseRegister from "./pages/Auth/NurseRegister";
+import VolunteerRegister from "./pages/Auth/VolunteerRegister";
 import Login from "./pages/Auth/Login";
 import Dashboard from "./pages/user/Dashboard";
 import PrivateRoute from "./components/Routes/Private";
@@ -21,7 +25,7 @@ import Products from "./pages/Admin/Products";
 import UpdateProduct from "./pages/Admin/UpdateProduct";
 import Search from "./pages/Search";
 import ProductDetails from "./pages/ProductDetails";
-import Categories from "./pages/HomePage";
+import Categories from "./pages/Categories";
 import CategoryProduct from "./pages/CategoryProduct";
 import CartPage from "./pages/CartPage";
 import AdminOrders from "./pages/Admin/AdminOrders";
@@ -32,7 +36,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/product/:slug" element={<ProductDetails />} />
         <Route path="/categories" element={<Categories />} />
-        <Route path="/medicineProduct" element={<MedicineProduct />} />
+        <Route path="/nurse" element={<Nurse />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/category/:slug" element={<CategoryProduct />} />
         <Route path="/search" element={<Search />} />
@@ -51,6 +56,9 @@ function App() {
           <Route path="admin/orders" element={<AdminOrders />} />
         </Route>
         <Route path="/register" element={<Register />} />
+        <Route path="/docregister" element={<DocRegister />} />
+        <Route path="/nurseregister" element={<NurseRegister />} />
+        <Route path="/volregister" element={<VolunteerRegister />} />
         <Route path="/forgot-password" element={<ForgotPasssword />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />

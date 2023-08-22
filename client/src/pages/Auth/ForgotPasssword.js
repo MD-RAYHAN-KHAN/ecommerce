@@ -3,13 +3,14 @@ import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import "../../styles/AuthStyles.css";
 
 const ForgotPasssword = () => {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [answer, setAnswer] = useState("");
-
+  const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
 
   // form function
@@ -35,7 +36,7 @@ const ForgotPasssword = () => {
   };
   return (
     <Layout title={"Forgot Password - Ecommerce APP"}>
-      <div className="form-container ">
+      <div className="form-container text-center">
         <form onSubmit={handleSubmit}>
           <h4 className="title">RESET PASSWORD</h4>
 
@@ -61,7 +62,7 @@ const ForgotPasssword = () => {
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="relative mb-3">
             <input
               type="password"
               value={newPassword}
@@ -71,9 +72,22 @@ const ForgotPasssword = () => {
               placeholder="Enter Your Password"
               required
             />
+            {visible ? (
+              <AiOutlineEye
+                className="absolute cursor-pointer"
+                size={25}
+                onClick={() => setVisible(false)}
+              />
+            ) : (
+              <AiOutlineEyeInvisible
+                className="absolute cursor-pointer"
+                size={25}
+                onClick={() => setVisible(true)}
+              />
+            )}
           </div>
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className='btn btn-main-2 btn-radius mt-lg-2 px-4'>
             RESET
           </button>
         </form>

@@ -36,3 +36,40 @@
 .category .card-img-top {
   height: 300px !important;
 }
+
+/* categoryes css file start */
+/* .card:nth-child(odd) {
+  background: red;
+}
+
+p:nth-child(even) {
+  background: lightgreen;
+} */
+.catagory .row {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-top: var(--bs-gutter-y);
+}
+.home-page .card-img-top {
+  height: 250px !important;
+}
+/* Checkbox and Radio Button Styles */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.checkbox-label {
+  margin-left: 8px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-label {
+  margin-bottom: 4px;
+}

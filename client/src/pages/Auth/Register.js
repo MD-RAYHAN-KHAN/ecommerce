@@ -3,7 +3,10 @@ import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import "../../styles/AuthStyles.css";
+
+
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,6 +14,7 @@ const Register = () => {
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [answer, setAnswer] = useState("");
+  const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
 
   // form function
@@ -39,9 +43,9 @@ const Register = () => {
 
   return (
     <Layout title="Register - Ecommer App">
-      <div className="form-container" style={{ minHeight: "90vh" }}>
+      <div className="form-container userSignUp pt-4" style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
-          <h4 className="title">REGISTER FORM</h4>
+          <h4 className="title py-3">USER REGISTER FORM</h4>
           <div className="mb-3">
             <input
               type="text"
@@ -65,7 +69,7 @@ const Register = () => {
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="relative mb-3">
             <input
               type="password"
               value={password}
@@ -75,6 +79,19 @@ const Register = () => {
               placeholder="Enter Your Password"
               required
             />
+            {visible ? (
+              <AiOutlineEye
+                className="absolute cursor-pointer"
+                size={25}
+                onClick={() => setVisible(false)}
+              />
+            ) : (
+              <AiOutlineEyeInvisible
+                className="absolute cursor-pointer"
+                size={25}
+                onClick={() => setVisible(true)}
+              />
+            )}
           </div>
           <div className="mb-3">
             <input
@@ -109,9 +126,11 @@ const Register = () => {
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary">
-            REGISTER
-          </button>
+          <div className="text-center">
+            <button type="submit" className='btn btn-main-2 rounded w-100'>
+              Sign Up
+            </button>
+          </div>
         </form>
       </div>
     </Layout>

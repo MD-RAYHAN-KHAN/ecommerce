@@ -6,6 +6,7 @@ import SearchInput from "../Form/SearchInput";
 import useCategory from "../../hooks/useCategory";
 import { useCart } from "../../context/cart";
 import { Badge } from "antd";
+import { FaOpencart } from 'react-icons/fa';
 
 const Header = () => {
   const [auth, setAuth] = useAuth();
@@ -47,8 +48,13 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/medicineProduct" className="nav-link">
-                    MedicineProduct
+                  <NavLink to="/doctor" className="nav-link">
+                    Doctor
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/nurse" className="nav-link">
+                    Nurse
                   </NavLink>
                 </li>
                 <li className="nav-item dropdown">
@@ -57,7 +63,7 @@ const Header = () => {
                     to={"/categories"}
                     data-bs-toggle="dropdown"
                   >
-                    categories
+                    Medicine
                   </Link>
                   <ul className="dropdown-menu">
                     <li>
@@ -67,23 +73,64 @@ const Header = () => {
                     </li>
                     {categories?.map((c) => (
                       <li>
-                        <Link
+                        {/* <Link
                           className="dropdown-item"
                           to={`/category/${c.slug}`}
                         >
                           {c.name}
-                        </Link>
+                        </Link> */}
                       </li>
                     ))}
                   </ul>
                 </li>
+                <li className="nav-item">
+                  <NavLink to="/blog" className="nav-link">
+                    Blog
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/contact" className="nav-link">
+                    Contact
+                  </NavLink>
+                </li>
 
                 {!auth?.user ? (
                   <>
-                    <li className="nav-item">
-                      <NavLink to="/register" className="nav-link">
-                        Register
-                      </NavLink>
+                    <li className="nav-item dropdown">
+                      <Link
+                        className="nav-link dropdown-toggle"
+                        to={"/register"}
+                        data-bs-toggle="dropdown"
+                      >
+                        Registation
+                      </Link>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <Link className="dropdown-item" to={"/register"}>
+                            User Registation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" to={"/docregister"}>
+                            Doctor Registation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" to={"/nurseregister"}>
+                            Nuser Registation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" to={"/volregister"}>
+                            Volunteer Registation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" to={"/diagnosticregister"}>
+                            Diagnostic Center Registation
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
                     <li className="nav-item">
                       <NavLink to="/login" className="nav-link">
@@ -112,6 +159,12 @@ const Header = () => {
                           >
                             Dashboard
                           </NavLink>
+                          {/* <NavLink
+                            to={`/dashboard/${auth?.user?.role === 1 ? "admin" : auth?.user?.role === 2 ? "doctor" : auth?.user?.role === 3 ? "nurse" : auth?.user?.role === 4 ? "volunteer" : "user"}`}
+                            className="dropdown-item"
+                          >
+                            Dashboard
+                          </NavLink> */}
                         </li>
                         <li>
                           <NavLink
@@ -143,7 +196,8 @@ const Header = () => {
             <div className="col-4 ms-auto mt-3 ">
               <NavLink to="/cart" className="nav-link">
                 <Badge count={cart?.length} showZero offset={[10, -5]}>
-                  Cart
+                  {/* <p className="Bolder">Cart</p> */}
+                  <FaOpencart className="cart-icon" />
                 </Badge>
               </NavLink>
             </div>

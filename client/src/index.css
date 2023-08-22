@@ -22,6 +22,9 @@ body {
   color: #6F8BA4;
   font-weight: 400;
 }
+.mt-120{
+  margin-top: 120px;
+}
 .text-justify{
   text-align: justify;
 }
@@ -37,7 +40,8 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Exo", sans-serif;
   font-weight: 700;
-  color: #223a66;
+  /* color: #223a66; */
+  color: #222;
 }
 p{
   font-family: 'Inter', sans-serif;
@@ -155,6 +159,7 @@ p{
 }
 .navbar {
   --bs-bg-opacity: 1;
+  color: #222;
   background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity)) !important;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
@@ -162,7 +167,6 @@ p{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   --webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
 .nav-link {
   font-weight: 300 !important;
 }
@@ -182,6 +186,53 @@ p{
     letter-spacing: 3px;
   }
 }
+.dropdown .dropdown-menu {
+  position: absolute;
+  display: block;
+  width: fit-content;
+  background: #fff;
+  /* min-width: 200px; */
+  top: 130%;
+  left: 0;
+  right: 0px;
+  opacity: 0;
+  padding: 0px;
+  visibility: hidden;
+  transition: all 0.3s ease-out 0s;
+  border: 0px;
+  border-top: 5px solid #e12454;
+  border-radius: 0px;
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 115%;
+}
+
+.dropdown .dropdown-item {
+  padding: 13px 20px;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+  font-weight: 400;
+  color: #555;
+}
+
+.dropdown .dropdown-item:hover {
+  color: #e12454;
+}
+
+.header-top-bar {
+  background: #223a66;
+  font-size: 14px;
+  padding: 10px 0px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #fff;
+}
+
+.top-bar-info li a {
+  color: #fff;
+  margin-right: 20px;
+}
 
 .search-form {
   margin-right: 10px;
@@ -196,7 +247,17 @@ p{
   border-radius: 0;
   color: white;
 }
-
+.cart-icon{
+  font-size: 30px;
+  color: #222;
+  transition: font-size 0.3s ease;
+}
+.cart-icon :hover{
+  color: #e12454;
+}
+.cart-icon :active{
+  color: #e12454;
+}
 /* =============================
 ==========footer============= */
 
@@ -256,14 +317,14 @@ p{
 }
 
 .pnf-btn {
-  color: black;
-  border: 1px solid black;
+  color: #222;
+  border: 1px solid #222;
   text-decoration: none;
   padding: 10px;
   margin-top: 10px;
 }
 .pnf-btn:hover {
-  background-color: black;
+  background-color: #222;
   color: white;
 }
 /* ========================================= */
@@ -352,4 +413,17 @@ service {
 
 .department-service {
   margin-bottom: 40px;
+}
+.shadow{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 15px;
+}
+.shadow-2{
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.shadow-3{
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  background-color: #F9F9F9;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }

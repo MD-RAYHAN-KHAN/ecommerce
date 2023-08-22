@@ -101,7 +101,7 @@ const CreateCategory = () => {
                 setValue={setName}
               />
             </div>
-            <div className="w-75">
+            <div className=" m-1 w-75">
               <table className="table">
                 <thead>
                   <tr>
