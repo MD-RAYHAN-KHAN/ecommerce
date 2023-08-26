@@ -20,11 +20,11 @@ const AdminDashboard = () => {
               <p> Admin Contact : {auth?.user?.phone}</p>
               <p> Admin Contact : {auth?.user?.address}</p>
               <button
-                      className="btn btn-outline-dark shadow-2 w-25"
-                      onClick={() => navigate("/dashboard/user/profile")}
-                    >
-                      Update Profile
-                    </button>
+                className="btn btn-outline-dark shadow-2 w-25"
+                onClick={() => navigate("/dashboard/user/profile")}
+              >
+                Update Profile
+              </button>
             </div>
           </div>
         </div>

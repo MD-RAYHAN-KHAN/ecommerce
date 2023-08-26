@@ -120,8 +120,8 @@ const Categories = () => {
         </div>
       </div>
 
-      <div className="container catagory mb-5">
-        <div className="d-flex justify-content-between">
+      <div className="catagory d-flex justify-content-around mb-5">
+        {/* <div className="d-flex justify-content-between">
           <div className="divider" />
           <div className="divider" />
           <div className="divider" />
@@ -129,8 +129,8 @@ const Categories = () => {
         <div className="d-flex justify-content-between mt-5 container-fluid">
           <div className="divider" />
           <div className="divider" />
-        </div>
-        <div className="container catagory mt-3 home-page d-flex row">
+        </div> */}
+        <div className=" container ms-lg-5 catagory mt-3 home-page d-flex row">
           <div className="col-3">
             <div className="shadow">
               <h4 className="">Filter By Category</h4>
@@ -168,8 +168,8 @@ const Categories = () => {
               </div>
             </div>
           </div>
-          <div className="ms-5 col-9">
-            <div className="d-flex flex-wrap shadow-2">
+          <div className="col-9 d-flex">
+            <div className="d-flex flex-wrap">
               {products?.map((p) => (
                 <div className="card m-2" key={p._id}>
                   <img

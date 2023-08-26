@@ -50,7 +50,7 @@ const DocRegister = () => {
   };
 
   return (
-    <Layout title="Register - Ecommer App">
+    <Layout title="Register - Family Care">
       <div className='docSignUp container-fluid'>
         <div className='container mt-4'>
           {/* <div className='col-6  pb-5 center'> */}
@@ -86,7 +86,7 @@ const DocRegister = () => {
                 <div className='d-flex'>
                   <div className='relative col-6 pe-2 mb-3'>
                     <input
-                      type="password"
+                      type={visible ? "text" : "password"}
                       value={password}
                       name="InputPassword"
                       onChange={(e) => setPassword(e.target.value)}
@@ -111,7 +111,7 @@ const DocRegister = () => {
                   </div>
                   <div className='relative col-6 mb-3'>
                     <input
-                      type="password"
+                      type={visible ? "text" : "password"}
                       value={repassword}
                       name="InputPassword"
                       onChange={(e) => setRePassword(e.target.value)}

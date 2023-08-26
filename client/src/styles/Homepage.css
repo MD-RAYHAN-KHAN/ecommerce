@@ -314,3 +314,28 @@ filters
   clear: both;
   background: transparent;
 }
+
+
+.award :hover {
+	width: 100px;
+	height: 50px;
+	transform: skew(12deg);
+}
+/* animation-style-01 */
+.owl-item.active .animation-style-01 .slider-content h5,
+.owl-item.active .animation-style-01 .slider-content-2 h5 {
+    -webkit-animation: 800ms ease-in-out 0s normal none 1 running zoomInRight;
+    animation: 800ms ease-in-out 0s normal none 1 running zoomInRight;
+}
+
+.owl-item.active .animation-style-01 .slider-content h2 {
+    -webkit-animation: 1200ms ease-in-out 0s normal none 1 running zoomInRight;
+    animation: 1200ms ease-in-out 0s normal none 1 running zoomInRight;
+}
+
+.owl-item.active .animation-style-01 .slider-content h3,
+.owl-item.active .animation-style-01 .slider-content-2 h3 {
+    -webkit-animation: 1600ms ease-in-out 0s normal none 1 running zoomInRight;
+    animation: 1600ms ease-in-out 0s normal none 1 running zoomInRight;
+}
+

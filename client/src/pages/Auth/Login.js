@@ -42,8 +42,8 @@ const Login = () => {
     }
   };
   return (
-    <Layout title="Register - Ecommer App">
-      <div id="form-login " className="form-container" style={{ minHeight: "90vh" }}>
+    <Layout title="Register - Family Care">
+      <div id="form-login " className="form-container docSignUp" style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit} className="container">
           <h4 className="title py-4">Family Care</h4>
 

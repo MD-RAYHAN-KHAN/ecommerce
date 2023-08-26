@@ -1,47 +1,37 @@
 import mongoose from "mongoose";
 
-//create user schema
-const doctorSchema = new mongoose.Schema({
+const doctorSchema = new mongoose.Schema(
+  {
     name: {
-        type: String,
-        require: true
+      type: String,
+      required: true,
     },
-    email: {
-        type: String,
-        require: true,
-        unique: true
+    slug: {
+      type: String,
+      required: true,
     },
-    password: {
-        type: String,
-        require: true,
+    description: {
+      type: String,
+      required: true,
     },
-    bmdcNo: {
-        type: Number,
-        require: true,
+    price: {
+      type: Number,
+      required: true,
     },
-    phone: {
-        type: String,
-        require: true,
+    category: {
+      type: mongoose.ObjectId,
+      ref: "Category",
+      required: true,
     },
-    department: {
-        type: String,
-        enum: ['Cardiology', 'Orthopedics', 'Neurology', 'Other'], // Add more departments if needed
-        required: true,
+    photo: {
+      data: Buffer,
+      contentType: String,
     },
-    gender: {
-        type: String,
-        enum: ['male', 'female', 'other'], // Assuming these are the possible values
-        required: true,
+    statuss: {
+      type: String,
     },
-    address: {
-        type: {},
-        required: true,
-    },
-    answer: {
-        type: String,
-        required: true,
-    },
-    role: 2,
+  },
+  { timestamps: true }
+);
 
-}, { timestamps: true })
-export default mongoose.model('users', doctorSchema);
+export default mongoose.model("Doctor", doctorSchema);

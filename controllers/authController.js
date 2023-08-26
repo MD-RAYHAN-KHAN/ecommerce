@@ -6,7 +6,7 @@ import JWT from "jsonwebtoken";
 
 export const registerController = async (req, res) => {
   try {
-    const { name, email, password, phone, address, answer } = req.body;
+    const { name, email, password, mobile, bmdcNo, nmcNo, education, department, address, category, division, district, thana, gender, answer } = req.body;
     //validations
     if (!name) {
       return res.send({ error: "Name is Required" });
@@ -17,8 +17,8 @@ export const registerController = async (req, res) => {
     if (!password) {
       return res.send({ message: "Password is Required" });
     }
-    if (!phone) {
-      return res.send({ message: "Phone no is Required" });
+    if (!mobile) {
+      return res.send({ message: "mobile no is Required" });
     }
     if (!address) {
       return res.send({ message: "Address is Required" });
@@ -39,9 +39,24 @@ export const registerController = async (req, res) => {
     const hashedPassword = await hashPassword(password);
     //save
     const user = await new userModel({
+      // name,
+      // email,
+      // mobile,
+      // address,
+      // password: hashedPassword,
+      // answer,
       name,
       email,
-      phone,
+      mobile,
+      bmdcNo,
+      nmcNo,
+      education,
+      department,
+      category,
+      division,
+      district,
+      thana,
+      gender,
       address,
       password: hashedPassword,
       answer,
@@ -99,7 +114,7 @@ export const loginController = async (req, res) => {
         _id: user._id,
         name: user.name,
         email: user.email,
-        phone: user.phone,
+        mobile: user.mobile,
         address: user.address,
         role: user.role,
       },
@@ -167,7 +182,7 @@ export const testController = (req, res) => {
 //update prfole
 export const updateProfileController = async (req, res) => {
   try {
-    const { name, email, password, address, phone } = req.body;
+    const { name, email, password, address, mobile } = req.body;
     const user = await userModel.findById(req.user._id);
     //password
     if (password && password.length < 6) {
@@ -179,7 +194,7 @@ export const updateProfileController = async (req, res) => {
       {
         name: name || user.name,
         password: hashedPassword || user.password,
-        phone: phone || user.phone,
+        mobile: mobile || user.mobile,
         address: address || user.address,
       },
       { new: true }

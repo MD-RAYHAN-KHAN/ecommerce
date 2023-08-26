@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Checkbox, Radio } from "antd";
 import { Prices } from "../components/Prices";
 import { useCart } from "../context/cart";
@@ -108,7 +108,7 @@ const HomePage = () => {
     }
   };
   return (
-    <Layout title={"ALl Products - Best offers "}>
+    <Layout title={"Best offers - Family Care"}>
       {/* banner image */}
       <section className="bannner-section mt-sm-5 mt-lg-4">
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
@@ -131,7 +131,7 @@ const HomePage = () => {
                     <div className=" m-auto">
                       <div className="divider mb-3 pb-2" />
                       <span className="text-uppercase letter-spacing">Total Health care solution</span>
-                      <h1 className="fs-h1 letter-spacing pt-2">Your most trusted health partner</h1>
+                      <h1 className="fs-h1 letter-spacing pt-2 slider-content-2">Your most trusted health partner</h1>
                       <p class="mb-4 pr-5 fs-5">
                         A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
                         aperiam maiores sunt fugit, deserunt rem suscipit placeat.
@@ -162,7 +162,7 @@ const HomePage = () => {
                     <div className=" m-auto">
                       <div className="divider mb-3 pb-2" />
                       <span className="text-uppercase letter-spacing">Total Health care solution</span>
-                      <h1 className="fs-h1 letter-spacing pt-2">Your most trusted health partner</h1>
+                      <h1 className="fs-h1 letter-spacing pt-2 content-2">Your most trusted health partner</h1>
                       <p class="mb-4 pr-5 fs-5">
                         A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
                         aperiam maiores sunt fugit, deserunt rem suscipit placeat.
@@ -191,20 +191,18 @@ const HomePage = () => {
               <div className="carousel-caption  mb-lg-200 d-none d-md-block">
                 <div className="row">
                   <div className="col-lg-10 col-md-12 col-xl-7">
-                    <div className=" m-auto">
+                    <div className="m-auto">
                       <div className="divider mb-3 pb-2" />
                       <span className="text-uppercase letter-spacing">Total Health care solution</span>
-                      <h1 className="fs-h1 letter-spacing pt-2">Your most trusted health partner</h1>
-                      <p class="mb-4 pr-5 fs-5">
+                      <h1 className="fs-h1 letter-spacing pt-2 content-2 animation-style-01">Your most trusted health partner</h1>
+                      <p className="mb-4 pr-5 fs-5 animation-style-01">
                         A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
                         aperiam maiores sunt fugit, deserunt rem suscipit placeat.
                       </p>
 
-                      <div className="btn-container ">
+                      <div className="btn-container">
                         <NavLink to="/doctor" className="nav-link">
-                          <button className="btn-1 btn-main-2 btn-icon btn-round-full">
-                            DoctorConsultation
-                          </button>
+                          <button className="btn-1 btn-main-2 btn-icon btn-round-full">Doctor Consultation</button>
                         </NavLink>
                       </div>
                     </div>

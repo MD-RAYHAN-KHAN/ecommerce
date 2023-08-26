@@ -36,7 +36,7 @@ const Contact = () => {
     }
   };
   return (
-    <Layout title={"Contact us"}>
+    <Layout title={"Contact us Family Care"}>
       <div className="container-fluid mt-120">
         <div className=" containe row justify-content-center">
           <div className="col-lg-7">

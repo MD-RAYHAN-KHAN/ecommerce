@@ -55,7 +55,7 @@ const VolunteerRegister = () => {
   };
 
   return (
-    <Layout title="Register - Ecommer App">
+    <Layout title="Register - Family Care">
       <div className='volSignUp container-fluid'>
         <div className='container mt-4'>
           {/* <div className='col-6  pb-5 center'> */}

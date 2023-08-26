@@ -16,13 +16,41 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    phone: {
+    bmdcNo: {
+      type: String,
+    },
+    nmcNo: {
+      type: String,
+    },
+    mobile: {
       type: String,
       required: true,
+    },
+    department: {
+      type: String,
+    },
+    education: {
+      type: String,
+    },
+    category: {
+      type: String,
+    },
+    division: {
+      type: String,
+    },
+    district: {
+      type: String,
     },
     address: {
       type: {},
       required: true,
+    },
+    thana: {
+      type: String,
+    },
+    gender: {
+      type: String,
+      enum: ['male', 'female', 'other'], // Assuming these are the possible values
     },
     answer: {
       type: String,

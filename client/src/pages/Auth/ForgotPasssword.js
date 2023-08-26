@@ -35,8 +35,8 @@ const ForgotPasssword = () => {
     }
   };
   return (
-    <Layout title={"Forgot Password - Ecommerce APP"}>
-      <div className="form-container text-center">
+    <Layout title={"Forgot Password - Family Care"}>
+      <div className="form-container docSignUp text-center">
         <form onSubmit={handleSubmit}>
           <h4 className="title">RESET PASSWORD</h4>
 
@@ -64,7 +64,7 @@ const ForgotPasssword = () => {
           </div>
           <div className="relative mb-3">
             <input
-              type="password"
+              type={visible ? "text" : "password"}
               value={newPassword}
               onChange={(e) => setNewPassword(e.target.value)}
               className="form-control"

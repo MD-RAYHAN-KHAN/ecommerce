@@ -1,5 +1,5 @@
-import productModel from "../models/productModel.js";
-import categoryModel from "../models/categoryModel.js";
+import doctorModel from "../models/DoctorModel.js";
+import doctorCategoryModel from "../models/doctorCategoryModel.js";
 import orderModel from "../models/orderModel.js";
 
 import fs from "fs";
@@ -9,17 +9,10 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-//payment gateway
-var gateway = new braintree.BraintreeGateway({
-  environment: braintree.Environment.Sandbox,
-  merchantId: process.env.BRAINTREE_MERCHANT_ID,
-  publicKey: process.env.BRAINTREE_PUBLIC_KEY,
-  privateKey: process.env.BRAINTREE_PRIVATE_KEY,
-});
 
-export const createProductController = async (req, res) => {
+export const createDoctorController = async (req, res) => {
   try {
-    const { name, description, price, category, quantity, shipping } =
+    const { name, description, price, category, statuss } =
       req.fields;
     const { photo } = req.files;
     //Validation
@@ -32,39 +25,37 @@ export const createProductController = async (req, res) => {
         return res.status(500).send({ error: "Price is Required" });
       case !category:
         return res.status(500).send({ error: "Category is Required" });
-      case !quantity:
-        return res.status(500).send({ error: "Quantity is Required" });
       case photo && photo.size > 1000000:
         return res
           .status(500)
           .send({ error: "photo is Required and should be less then 1mb" });
     }
 
-    const products = new productModel({ ...req.fields, slug: slugify(name) });
+    const doctors = new doctorModel({ ...req.fields, slug: slugify(name) });
     if (photo) {
-      products.photo.data = fs.readFileSync(photo.path);
-      products.photo.contentType = photo.type;
+      doctors.photo.data = fs.readFileSync(photo.path);
+      doctors.photo.contentType = photo.type;
     }
-    await products.save();
+    await doctors.save();
     res.status(201).send({
       success: true,
-      message: "Product Created Successfully",
-      products,
+      message: "Doctor Created Successfully",
+      doctors,
     });
   } catch (error) {
     console.log(error);
     res.status(500).send({
       success: false,
       error,
-      message: "Error in crearing product",
+      message: "Error in crearing Doctor",
     });
   }
 };
 
-//get all products
-export const getProductController = async (req, res) => {
+//get all doctors
+export const getDoctorController = async (req, res) => {
   try {
-    const products = await productModel
+    const doctors = await doctorModel
       .find({})
       .populate("category")
       .select("-photo")
@@ -72,48 +63,48 @@ export const getProductController = async (req, res) => {
       .sort({ createdAt: -1 });
     res.status(200).send({
       success: true,
-      counTotal: products.length,
-      message: "ALlProducts ",
-      products,
+      counTotal: doctors.length,
+      message: "ALldoctors ",
+      doctors,
     });
   } catch (error) {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Erorr in getting products",
+      message: "Erorr in getting doctors",
       error: error.message,
     });
   }
 };
-// get single product
-export const getSingleProductController = async (req, res) => {
+// get single doctor
+export const getSingleDoctorController = async (req, res) => {
   try {
-    const product = await productModel
+    const doctor = await doctorModel
       .findOne({ slug: req.params.slug })
       .select("-photo")
       .populate("category");
     res.status(200).send({
       success: true,
-      message: "Single Product Fetched",
+      message: "Single doctor Fetched",
       product,
     });
   } catch (error) {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Eror while getitng single product",
+      message: "Eror while getitng single doctor",
       error,
     });
   }
 };
 
 // get photo
-export const productPhotoController = async (req, res) => {
+export const doctorPhotoController = async (req, res) => {
   try {
-    const product = await productModel.findById(req.params.pid).select("photo");
-    if (product.photo.data) {
-      res.set("Content-type", product.photo.contentType);
-      return res.status(200).send(product.photo.data);
+    const doctor = await doctorModel.findById(req.params.pid).select("photo");
+    if (doctor.photo.data) {
+      res.set("Content-type", doctor.photo.contentType);
+      return res.status(200).send(doctor.photo.data);
     }
   } catch (error) {
     console.log(error);
@@ -126,27 +117,27 @@ export const productPhotoController = async (req, res) => {
 };
 
 //delete controller
-export const deleteProductController = async (req, res) => {
+export const deleteDoctorController = async (req, res) => {
   try {
-    await productModel.findByIdAndDelete(req.params.pid).select("-photo");
+    await doctorModel.findByIdAndDelete(req.params.pid).select("-photo");
     res.status(200).send({
       success: true,
-      message: "Product Deleted successfully",
+      message: "doctor Deleted successfully",
     });
   } catch (error) {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Error while deleting product",
+      message: "Error while deleting doctor",
       error,
     });
   }
 };
 
-//upate producta
-export const updateProductController = async (req, res) => {
+//upate doctor
+export const updateDoctorController = async (req, res) => {
   try {
-    const { name, description, price, category, quantity, shipping } =
+    const { name, description, price, category, statuss } =
       req.fields;
     const { photo } = req.files;
     //alidation
@@ -159,65 +150,63 @@ export const updateProductController = async (req, res) => {
         return res.status(500).send({ error: "Price is Required" });
       case !category:
         return res.status(500).send({ error: "Category is Required" });
-      case !quantity:
-        return res.status(500).send({ error: "Quantity is Required" });
       case photo && photo.size > 1000000:
         return res
           .status(500)
           .send({ error: "photo is Required and should be less then 1mb" });
     }
 
-    const products = await productModel.findByIdAndUpdate(
+    const doctors = await doctorModel.findByIdAndUpdate(
       req.params.pid,
       { ...req.fields, slug: slugify(name) },
       { new: true }
     );
     if (photo) {
-      products.photo.data = fs.readFileSync(photo.path);
-      products.photo.contentType = photo.type;
+      doctors.photo.data = fs.readFileSync(photo.path);
+      doctors.photo.contentType = photo.type;
     }
-    await products.save();
+    await doctors.save();
     res.status(201).send({
       success: true,
-      message: "Product Updated Successfully",
-      products,
+      message: "Doctor Updated Successfully",
+      doctors,
     });
   } catch (error) {
     console.log(error);
     res.status(500).send({
       success: false,
       error,
-      message: "Error in Updte product",
+      message: "Error in Updted doctor",
     });
   }
 };
 
 // filters
-export const productFiltersController = async (req, res) => {
+export const doctorFiltersController = async (req, res) => {
   try {
     const { checked, radio } = req.body;
     let args = {};
     if (checked.length > 0) args.category = checked;
     if (radio.length) args.price = { $gte: radio[0], $lte: radio[1] };
-    const products = await productModel.find(args);
+    const doctors = await doctorModel.find(args);
     res.status(200).send({
       success: true,
-      products,
+      doctors,
     });
   } catch (error) {
     console.log(error);
     res.status(400).send({
       success: false,
-      message: "Error WHile Filtering Products",
+      message: "Error WHile Filtering doctors",
       error,
     });
   }
 };
 
 // product count
-export const productCountController = async (req, res) => {
+export const doctorCountController = async (req, res) => {
   try {
-    const total = await productModel.find({}).estimatedDocumentCount();
+    const total = await doctorModel.find({}).estimatedDocumentCount();
     res.status(200).send({
       success: true,
       total,
@@ -225,19 +214,19 @@ export const productCountController = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.status(400).send({
-      message: "Error in product count",
+      message: "Error in doctor count",
       error,
       success: false,
     });
   }
 };
 
-// product list base on page
-export const productListController = async (req, res) => {
+// doctor list base on page
+export const doctorListController = async (req, res) => {
   try {
     const perPage = 6;
     const page = req.params.page ? req.params.page : 1;
-    const products = await productModel
+    const doctors = await doctorModel
       .find({})
       .select("-photo")
       .skip((page - 1) * perPage)
@@ -245,7 +234,7 @@ export const productListController = async (req, res) => {
       .sort({ createdAt: -1 });
     res.status(200).send({
       success: true,
-      products,
+      doctors,
     });
   } catch (error) {
     console.log(error);
@@ -258,10 +247,10 @@ export const productListController = async (req, res) => {
 };
 
 // search product
-export const searchProductController = async (req, res) => {
+export const searchDoctorController = async (req, res) => {
   try {
     const { keyword } = req.params;
-    const resutls = await productModel
+    const resutls = await doctorModel
       .find({
         $or: [
           { name: { $regex: keyword, $options: "i" } },
@@ -280,11 +269,11 @@ export const searchProductController = async (req, res) => {
   }
 };
 
-// similar products
-export const realtedProductController = async (req, res) => {
+// similar doctors
+export const realtedDoctorController = async (req, res) => {
   try {
     const { pid, cid } = req.params;
-    const products = await productModel
+    const doctors = await doctorModel
       .find({
         category: cid,
         _id: { $ne: pid },
@@ -294,34 +283,34 @@ export const realtedProductController = async (req, res) => {
       .populate("category");
     res.status(200).send({
       success: true,
-      products,
+      doctors,
     });
   } catch (error) {
     console.log(error);
     res.status(400).send({
       success: false,
-      message: "error while geting related product",
+      message: "error while geting related doctor",
       error,
     });
   }
 };
 
-// get prdocyst by catgory
-export const productCategoryController = async (req, res) => {
+// get doctor by catgory
+export const doctorCategoryController = async (req, res) => {
   try {
-    const category = await categoryModel.findOne({ slug: req.params.slug });
-    const products = await productModel.find({ category }).populate("category");
+    const category = await doctorCategoryModel.findOne({ slug: req.params.slug });
+    const doctors = await doctorModel.find({ category }).populate("category");
     res.status(200).send({
       success: true,
       category,
-      products,
+      doctors,
     });
   } catch (error) {
     console.log(error);
     res.status(400).send({
       success: false,
       error,
-      message: "Error While Getting products",
+      message: "Error While Getting doctors",
     });
   }
 };
@@ -337,40 +326,6 @@ export const braintreeTokenController = async (req, res) => {
         res.send(response);
       }
     });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-//payment
-export const brainTreePaymentController = async (req, res) => {
-  try {
-    const { nonce, cart } = req.body;
-    let total = 0;
-    cart.map((i) => {
-      total += i.price;
-    });
-    let newTransaction = gateway.transaction.sale(
-      {
-        amount: total,
-        paymentMethodNonce: nonce,
-        options: {
-          submitForSettlement: true,
-        },
-      },
-      function (error, result) {
-        if (result) {
-          const order = new orderModel({
-            products: cart,
-            payment: result,
-            buyer: req.user._id,
-          }).save();
-          res.json({ ok: true });
-        } else {
-          res.status(500).send(error);
-        }
-      }
-    );
   } catch (error) {
     console.log(error);
   }

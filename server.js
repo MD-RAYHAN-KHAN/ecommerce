@@ -6,6 +6,9 @@ import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+
+import doctorsRoute from "./routes/doctorsRoute.js"
+import doctorCategoryRoute from "./routes/doctorCategoryRoute.js"
 import cors from "cors";
 
 //configure env
@@ -27,9 +30,12 @@ app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
+app.use("/api/v1/doctors", doctorsRoute);
+app.use("/api/v1/doctorCategory", doctorCategoryRoute);
+
 //rest api
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
+  res.send("<h1>Welcome to Family Care</h1>");
 });
 
 //PORT

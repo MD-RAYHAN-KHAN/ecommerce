@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
 
 
@@ -11,13 +11,28 @@ const NurseRegister = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [repassword, setRePassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [mobile, setMobile] = useState("");
-  const [bmdcNo, setBmdcNo] = useState("");
+  const [nmcNo, setNmcNo] = useState("");
   const [department, setDepartment] = useState("");
   const [gender, setGender] = useState("");
+  const [address, setAddress] = useState("");
+  const [answer, setAnswer] = useState("");
+
+  const [passwordsMatch, setPasswordsMatch] = useState(false);
   const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
+
+  // password match function
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+    setPasswordsMatch(event.target.value === confirmPassword);
+  };
+
+  const handleConfirmPasswordChange = (event) => {
+    setConfirmPassword(event.target.value);
+    setPasswordsMatch(event.target.value === password);
+  };
 
   // form function
   const handleSubmit = async (e) => {
@@ -28,9 +43,11 @@ const NurseRegister = () => {
         email,
         password,
         mobile,
-        bmdcNo,
+        nmcNo,
         department,
         gender,
+        address,
+        answer,
       });
       if (res && res.data.success) {
         toast.success(res.data && res.data.message);
@@ -45,12 +62,12 @@ const NurseRegister = () => {
   };
 
   return (
-    <Layout title="Register - Ecommer App">
+    <Layout title="Register - Family Care">
       <div className='nurseSignUp container-fluid'>
         <div className='container mt-4'>
           {/* <div className='col-6  pb-5 center'> */}
           <div className="py-4 row" style={{ minHeight: "90vh" }}>
-            <div className="form-container col-sm-12 col-lg-6">
+            <div className="form-container col-sm-12 col-lg-7">
               <form onSubmit={handleSubmit} className='m-auto my-2 pe-4 w-100'>
                 <h4 className="title py-3">Nurse Registation Form</h4>
                 <div className="mb-3">
@@ -81,10 +98,10 @@ const NurseRegister = () => {
                 <div className='d-flex'>
                   <div className='relative col-6 pe-2 mb-3'>
                     <input
-                      type="password"
+                      type={visible ? "text" : "password"}
                       value={password}
                       name="InputPassword"
-                      onChange={(e) => setPassword(e.target.value)}
+                      onChange={handlePasswordChange}
                       className="form-control"
                       id="password"
                       placeholder="Enter Password"
@@ -106,13 +123,13 @@ const NurseRegister = () => {
                   </div>
                   <div className='relative col-6 mb-3'>
                     <input
-                      type="password"
-                      value={repassword}
+                      type={visible ? "text" : "password"}
+                      value={confirmPassword}
                       name="InputPassword"
-                      onChange={(e) => setRePassword(e.target.value)}
+                      onChange={handleConfirmPasswordChange}
                       className="form-control"
                       id="password"
-                      placeholder="Enter Re-Password"
+                      placeholder="Enter ConfirmPassword"
                       required
                     />
                     {visible ? (
@@ -128,31 +145,36 @@ const NurseRegister = () => {
                         onClick={() => setVisible(true)}
                       />
                     )}
+                    {!passwordsMatch && (
+                       <p className="error-message">Passwords do not match</p>
+                    )}
                   </div>
                 </div>
-                <div className='mb-3'>
-                  <input
-                    type="text"
-                    value={mobile}
-                    name="inputMobile"
-                    onChange={(e) => setMobile(e.target.value)}
-                    className="form-control"
-                    id="mobile"
-                    placeholder="Enter Mobile Number"
-                    required
-                  />
-                </div>
-                <div className='mb-3'>
-                  <input
-                    type="text"
-                    value={bmdcNo}
-                    name="inputBMDCNo"
-                    onChange={(e) => setBmdcNo(e.target.value)}
-                    className="form-control"
-                    id="bmdcNo"
-                    placeholder="Enter BMDC Number"
-                    required
-                  />
+                <div className='form-group mb-3 d-flex'>
+                  <div className='col-6 pe-1'>
+                    <input
+                      type="text"
+                      value={nmcNo}
+                      name="inputaaNmcNo"
+                      onChange={(e) => setNmcNo(e.target.value)}
+                      className="form-control"
+                      id="bmdcNo"
+                      placeholder="Enter NMC Number"
+                      required
+                    />
+                  </div>
+                  <div className='col-6 ps-1'>
+                    <input
+                      type="text"
+                      value={mobile}
+                      name="inputMobile"
+                      onChange={(e) => setMobile(e.target.value)}
+                      className="form-control"
+                      id="mobile"
+                      placeholder="Enter Mobile Number"
+                      required
+                    />
+                  </div>
                 </div>
                 <div className='form-group d-flex'>
                   <div className='col-6'>
@@ -199,6 +221,28 @@ const NurseRegister = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Enter Your Address"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    value={answer}
+                    onChange={(e) => setAnswer(e.target.value)}
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="What is Your Favorite sports"
+                    required
+                  />
                 </div>
                 <button type="submit" className='btn btn-main-2 btn-radius w-100 mt-lg-2'>
                   Sign Up

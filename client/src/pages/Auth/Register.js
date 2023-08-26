@@ -11,7 +11,7 @@ const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
+  const [mobile, setMobile] = useState("");
   const [address, setAddress] = useState("");
   const [answer, setAnswer] = useState("");
   const [visible, setVisible] = useState(false);
@@ -25,7 +25,7 @@ const Register = () => {
         name,
         email,
         password,
-        phone,
+        mobile,
         address,
         answer,
       });
@@ -42,7 +42,7 @@ const Register = () => {
   };
 
   return (
-    <Layout title="Register - Ecommer App">
+    <Layout title="Register - Family Care">
       <div className="form-container userSignUp pt-4" style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
           <h4 className="title py-3">USER REGISTER FORM</h4>
@@ -71,7 +71,7 @@ const Register = () => {
           </div>
           <div className="relative mb-3">
             <input
-              type="password"
+              type={visible ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="form-control"
@@ -96,11 +96,11 @@ const Register = () => {
           <div className="mb-3">
             <input
               type="text"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Phone"
+              placeholder="Enter Your mobile"
               required
             />
           </div>

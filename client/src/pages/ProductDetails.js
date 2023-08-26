@@ -52,7 +52,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <Layout>
+    <Layout title={"Product details - Family Care"}>
       <div className="row container product-details">
         <div className="col-md-6">
           <img
