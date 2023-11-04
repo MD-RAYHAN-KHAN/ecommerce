@@ -7,6 +7,7 @@
   font-family: "roboto", sans-serif;
   font-weight: normal;
   background-color: rgba(0, 0, 255, 0.072) !important;
+  margin-top: 10px;
 }
 .cart-page h1 > p {
   font-size: 20px;
@@ -26,4 +27,7 @@
 .cart-page .cart-summary {
   text-align: center;
   /* margin-top: -140px !important; */
+}
+.pt-100{
+  padding-top: 100px;
 }

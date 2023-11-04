@@ -48,13 +48,23 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/doctor" className="nav-link">
-                    Doctor
+                  <NavLink to="/nurse" className="nav-link">
+                    Nurse
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/nurse" className="nav-link">
-                    Nurse
+                  <NavLink to="/nanny" className="nav-link">
+                    Nanny 
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/volunteer" className="nav-link">
+                    Volunteer 
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/doctor" className="nav-link">
+                    Doctor
                   </NavLink>
                 </li>
                 <li className="nav-item dropdown">

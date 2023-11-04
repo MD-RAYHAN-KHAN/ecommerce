@@ -9,7 +9,7 @@ import Layout from "../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
 
-const HomePage = () => {
+const NursePage = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useCart();
   const [products, setProducts] = useState([]);
@@ -222,4 +222,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default NursePage;

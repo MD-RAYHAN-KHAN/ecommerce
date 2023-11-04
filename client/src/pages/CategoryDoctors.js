@@ -2,17 +2,16 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout/Layout";
 import { useParams, useNavigate } from "react-router-dom";
+import { useCart } from "../context/cart";
 import "../styles/CategoryProductStyles.css";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { useCart } from "../context/cart";
 
-const CategoryProduct = () => {
+const CategoryDoctor = () => {
   const params = useParams();
   const navigate = useNavigate();
-  const [products, setProducts] = useState([]);
-  const [category, setCategory] = useState([]);
-
+  const [doctors, setDoctors] = useState([]);
+  const [doctorcategory, setDoctorCategory] = useState([]);
   const [cart, setCart] = useCart();
   // eslint-disable-next-line no-unused-vars
   const [total, setTotal] = useState(0);
@@ -26,10 +25,10 @@ const CategoryProduct = () => {
   const getPrductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `/api/v1/product/product-category/${params.slug}`
+        `/api/v1/product/product-Doctorcategory/${params.slug}`
       );
-      setProducts(data?.products);
-      setCategory(data?.category);
+      setDoctors(data?.Doctors);
+      setDoctorCategory(data?.doctorcategory);
     } catch (error) {
       console.log(error);
     }
@@ -37,13 +36,13 @@ const CategoryProduct = () => {
 
   return (
     <Layout>
-      <div className="container mt-3 category">
-        <h4 className="text-center">Category - {category?.name}</h4>
-        <h6 className="text-center">{products?.length} result found </h6>
+      <div className="container mt-3 Doctorcategory">
+        <h4 className="text-center">DoctorCategory - {doctorcategory?.name}</h4>
+        <h6 className="text-center">{doctors?.length} result found </h6>
         <div className="row">
           <div className="col-md-9 offset-1">
             <div className="d-flex flex-wrap">
-              {products?.map((p) => (
+              {doctors?.map((p) => (
                 <div className="card m-2" key={p._id}>
                   <img
                     src={`/api/v1/product/product-photo/${p._id}`}
@@ -89,7 +88,7 @@ const CategoryProduct = () => {
               ))}
             </div>
             <div className="m-2 p-3">
-            {products && products.length < total && (
+            {doctors && doctors.length < total && (
               <button
                 className="btn btn-warning"
                 onClick={(e) => {
@@ -108,4 +107,4 @@ const CategoryProduct = () => {
   );
 };
 
-export default CategoryProduct;
+export default CategoryDoctor;

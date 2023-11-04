@@ -120,7 +120,7 @@ const HomePage = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="/images/bg/slider-bg-1.jpg"
+                src="/images/bg/slider-bg-3.jpg"
                 className="banner-img"
                 alt="bannerimage"
                 width={"100%"}
@@ -151,7 +151,7 @@ const HomePage = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="/images/bg/slider-bg-1.jpg"
+                src="/images/bg/slider-bg-2.2.jpg"
                 className="banner-img"
                 alt="bannerimage"
                 width={"100%"}

@@ -9,11 +9,11 @@ import { AiOutlineReload } from "react-icons/ai";
 import Layout from "../components/Layout/Layout";
 import "../styles/Homepage.css";
 
-const Categories = () => {
+const DoctorCategories = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useCart();
-  const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [doctors, setDoctors] = useState([]);
+  const [doctorCategories, setDoctorCategories] = useState([]);
   const [checked, setChecked] = useState([]);
   const [radio, setRadio] = useState([]);
   const [total, setTotal] = useState(0);
@@ -24,19 +24,19 @@ const Categories = () => {
     try {
       const { data } = await axios.get("/api/v1/category/get-category");
       if (data?.success) {
-        setCategories(data?.category);
+        setDoctorCategories(data?.doctorCategory);
       }
     } catch (error) {
       console.log(error);
     }
   };
 
-  const getAllProducts = useCallback(async () => {
+  const getAllDoctors = useCallback(async () => {
     try {
       setLoading(true);
       const { data } = await axios.get(`/api/v1/product/product-list/${page}`);
       setLoading(false);
-      setProducts(data.products);
+      setDoctors(data.doctors);
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -52,12 +52,13 @@ const Categories = () => {
     }
   };
 
+  // eslint-disable-next-line no-unused-vars
   const loadMore = async () => {
     try {
       setLoading(true);
       const { data } = await axios.get(`/api/v1/product/product-list/${page}`);
       setLoading(false);
-      setProducts([...products, ...data?.products]);
+      setDoctors([...doctors, ...data?.doctors]);
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -71,13 +72,13 @@ const Categories = () => {
     setChecked(updatedChecked);
   };
 
-  const filterProduct = useCallback(async () => {
+  const filterDoctors = useCallback(async () => {
     try {
       const { data } = await axios.post("/api/v1/product/product-filters", {
         checked,
         radio,
       });
-      setProducts(data?.products);
+      setDoctors(data?.doctors);
     } catch (error) {
       console.log(error);
     }
@@ -86,26 +87,26 @@ const Categories = () => {
   useEffect(() => {
     getAllCategory();
     getTotal();
-    getAllProducts();
-  }, [getAllProducts]);
+    getAllDoctors();
+  }, [getAllDoctors]);
 
   useEffect(() => {
     if ((!checked.length || !radio.length) && !loading) {
-      getAllProducts();
+      getAllDoctors();
     }
-  }, [checked.length, radio.length, loading, getAllProducts]);
+  }, [checked.length, radio.length, loading, getAllDoctors]);
 
   useEffect(() => {
     if (checked.length || radio.length) {
-      filterProduct();
+      filterDoctors();
     }
-  }, [checked, radio, filterProduct]);
+  }, [checked, radio, filterDoctors]);
 
   return (
     <Layout title={"All Categories"}>
       <div className="container" style={{ marginTop: "100px" }}>
         <div className="row container">
-          {categories.map((c) => (
+          {doctorCategories.map((c) => (
             <div className="col-md-4 col-lg-3 mt-3 mb-3 gx-3 gy-3" key={c._id}>
               <div className="card">
                 <Link
@@ -135,7 +136,7 @@ const Categories = () => {
             <div className="shadow">
               <h4 className="">Filter By Category</h4>
               <div className="d-flex flex-column">
-                {categories?.map((c) => (
+                {doctorCategories?.map((c) => (
                   <Checkbox
                     key={c._id}
                     onChange={(e) => handleFilter(e.target.checked, c._id)}
@@ -170,7 +171,7 @@ const Categories = () => {
           </div>
           <div className="col-9 d-flex">
             <div className="d-flex flex-wrap">
-              {products?.map((p) => (
+              {doctors?.map((p) => (
                 <div className="card m-2" key={p._id}>
                   <img
                     src={`/api/v1/product/product-photo/${p._id}`}
@@ -216,7 +217,7 @@ const Categories = () => {
               ))}
             </div>
             <div className="m-2 p-3">
-              {products && products.length < total && (
+              {doctors && doctors.length < total && (
                 <button
                   className="btn loadmore"
                   onClick={(e) => {
@@ -241,4 +242,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default DoctorCategories;
