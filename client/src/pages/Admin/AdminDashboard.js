@@ -7,7 +7,7 @@ const AdminDashboard = () => {
   const navigate = useNavigate();
   const [auth] = useAuth();
   return (
-    <Layout>
+    <Layout title="SuperAdmin - Family Care">
       <div className="container-fluid m-3 p-3 dashboard">
         <div className="row">
           <div className="col-md-3">
@@ -17,7 +17,7 @@ const AdminDashboard = () => {
             <div className="card w-75 p-3 shadow-2">
               <h5> Admin Name : {auth?.user?.name}</h5>
               <p> Admin Email : {auth?.user?.email}</p>
-              <p> Admin Contact : {auth?.user?.phone}</p>
+              <p> Admin Contact : {auth?.user?.mobile}</p>
               <p> Admin Contact : {auth?.user?.address}</p>
               <button
                 className="btn btn-outline-dark shadow-2 w-25"
@@ -34,3 +34,4 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+

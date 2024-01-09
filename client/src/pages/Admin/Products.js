@@ -23,7 +23,7 @@ const Products = () => {
     getAllProducts();
   }, []);
   return (
-    <Layout>
+    <Layout title="Product - Family Care">
       <div className="container-fluid m-3 p-3 dashboard">
         <div className="row">
           <div className="col-md-3">

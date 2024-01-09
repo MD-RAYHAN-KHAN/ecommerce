@@ -42,7 +42,7 @@ const Register = () => {
   };
 
   return (
-    <Layout title="Register - Family Care">
+    <Layout title="User-Register - Family Care">
       <div className="form-container userSignUp pt-4" style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
           <h4 className="title py-3">USER REGISTER FORM</h4>

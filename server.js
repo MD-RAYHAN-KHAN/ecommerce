@@ -6,6 +6,7 @@ import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+// import postRoutes from "./routes/postRoutes.js";
 
 import doctorsRoute from "./routes/doctorsRoute.js"
 import doctorCategoryRoute from "./routes/doctorCategoryRoute.js"
@@ -29,6 +30,8 @@ app.use(morgan("dev"));
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
+
+// app.use("/api/v1/post", postRoutes);
 
 app.use("/api/v1/doctors", doctorsRoute);
 app.use("/api/v1/doctorCategory", doctorCategoryRoute);

@@ -2,13 +2,12 @@
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
-// import "../styles/Homepage.css";
 import "../styles/Nannypage.css";
 
-const NursePage = () => {
+const VolunteerPage = () => {
     const navigate = useNavigate();
     return (
-        <Layout title={"Nurse Service - Family Care"}>
+        <Layout title={"Volunteer Service - Family Care"}>
             {/* banner image */}
             <section className="bannner-section mt-sm-5 mt-lg-4">
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
@@ -216,7 +215,7 @@ const NursePage = () => {
                                 <div className="content bg-white round-bottom p-4">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <h2 className="text-info">Taka</h2>
-                                        <h4 className="text-info ps-2">15000</h4>
+                                        <h4 className="text-info ps-2">3000</h4>
                                     </div>
                                     <div className="item-info px-3">
                                         <p>New profiles every 24h</p>
@@ -327,296 +326,40 @@ const NursePage = () => {
                 </div>
             </section>
             {/* about seciton end */}
-
-            {/* nanny section start */}
-            <section className="nanny px-3">
-                <div className="container-fluid">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-7">
-                                <div className="section-title text-center">
-                                    <h2 className="fs-h2 letter-spacing">Partners who support us</h2>
-                                    <div className="divider mx-auto my-4" />
-                                    <p className="">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                                        molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="carouselExampleIndicators" className="carousel slide mt-3" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
+            <section>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div className="d-flex justify-content-center">
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* <img src="..." class="d-block w-100" alt="..."> */}
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloremque.
+                            </p>
                         </div>
                         <div class="carousel-item">
-                            <div className="d-flex justify-content-center">
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* <img src="..." class="d-block w-100" alt="..."> */}
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloremque.
+                            </p>
                         </div>
                         <div class="carousel-item">
-                            <div className="d-flex justify-content-center">
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="review-info d-flex col">
-                                    <div className="testimonial-block style-2">
-                                        <div className="testimonial-thumb">
-                                            <img
-                                                src="/images/blog/blog2.jpg"
-                                                className="img-fluid"
-                                                alt="bannerimage"
-                                                width={"100%"}
-                                            />
-                                        </div>
-                                        <div className="client-info ">
-                                            <h4>Amazing service!</h4>
-                                            <span>John Partho</span>
-                                            <p className="text-justify">
-                                                They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                                                praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* <img src="..." class="d-block w-100" alt="..."> */}
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloremque.
+                            </p>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </section>
-            {/* nanny section end  */}
         </Layout >
     );
 };
 
-export default NursePage;
+export default VolunteerPage;

@@ -62,7 +62,7 @@ const NurseRegister = () => {
   };
 
   return (
-    <Layout title="Register - Family Care">
+    <Layout title="Nurse-Register - Family Care">
       <div className='nurseSignUp container-fluid'>
         <div className='container mt-4'>
           {/* <div className='col-6  pb-5 center'> */}

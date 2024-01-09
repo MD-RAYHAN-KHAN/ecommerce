@@ -42,7 +42,7 @@ const Login = () => {
     }
   };
   return (
-    <Layout title="Register - Family Care">
+    <Layout title="Login - Family Care">
       <div id="form-login " className="form-container docSignUp" style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit} className="container">
           <h4 className="title py-4">Family Care</h4>

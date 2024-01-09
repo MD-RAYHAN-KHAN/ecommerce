@@ -36,7 +36,7 @@ const CategoryProduct = () => {
   };
 
   return (
-    <Layout>
+    <Layout title={"Product Category - Family Care"}>
       <div className="container mt-3 category">
         <h4 className="text-center">Category - {category?.name}</h4>
         <h6 className="text-center">{products?.length} result found </h6>
@@ -47,7 +47,7 @@ const CategoryProduct = () => {
                 <div className="card m-2" key={p._id}>
                   <img
                     src={`/api/v1/product/product-photo/${p._id}`}
-                    className="card-img-top"
+                    className="card-img-top" width={"1%"}
                     alt={p.name}
                   />
                   <div className="card-body">
@@ -56,7 +56,7 @@ const CategoryProduct = () => {
                       <h5 className="card-title card-price">
                         {p.price.toLocaleString("en-US", {
                           style: "currency",
-                          currency: "USD",
+                          currency: "BDT",
                         })}
                       </h5>
                     </div>

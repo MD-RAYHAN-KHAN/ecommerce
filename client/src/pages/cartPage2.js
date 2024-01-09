@@ -80,7 +80,7 @@ const CartPage = () => {
     }
   };
   return (
-    <Layout>
+    <Layout title={"Card - Family Care"}>
       <div className=" cart-page">
         <div className="row">
           <div className="col-md-12">

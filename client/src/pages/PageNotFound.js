@@ -11,7 +11,7 @@ const Pagenotfound = () => {
         <div className="con">
           <div className="btn-1">
             {/* <Link to="/" className="pnf-btn px-5"> */}
-             <a className="aa" href="/config"> Go Back</a>
+             <a className="btn btn-outline-dark" href="/config"> Go Back</a>
             {/* </Link> */}
           </div>
         </div>

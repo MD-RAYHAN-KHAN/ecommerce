@@ -50,7 +50,7 @@ const DocRegister = () => {
   };
 
   return (
-    <Layout title="Register - Family Care">
+    <Layout title="Doctor-Register - Family Care">
       <div className='docSignUp container-fluid'>
         <div className='container mt-4'>
           {/* <div className='col-6  pb-5 center'> */}

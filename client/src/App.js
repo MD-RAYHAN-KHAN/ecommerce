@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Nurse from "./pages/Nurse";
 import Nanny from "./pages/Nanny";
+import Volunteer from "./pages/volunteer";
 import Blog from "./pages/blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/categories" element={<Categories />} />
         <Route path="/nurse" element={<Nurse />} />
         <Route path="/nanny" element={<Nanny />} />
+        <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/category/:slug" element={<CategoryProduct />} />

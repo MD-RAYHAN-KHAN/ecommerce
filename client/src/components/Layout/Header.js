@@ -37,11 +37,18 @@ const Header = () => {
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <div className="collapse navbar-collapse mt-minus-10" id="navbarTogglerDemo01">
+            <div className="collapse navbar-collapse ms-5" id="navbarTogglerDemo01">
               <Link to="/" className="navbar-brand">
-                Family Care
+                <div className="logo">
+                  <img
+                    src="logo-22.png"
+                    className="logo"
+                    alt="Family Care"
+                    width={"70%"}
+                  />
+                </div>
               </Link>
-              <ul className="navbar-nav m-auto mb-lg-0">
+              <ul className="navbar-nav m-auto">
                 <li className="nav-item">
                   <NavLink to="/" className="nav-link mt-sm-4 mt-lg-0">
                     Home
@@ -54,12 +61,12 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink to="/nanny" className="nav-link">
-                    Nanny 
+                    Nanny
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/volunteer" className="nav-link">
-                    Volunteer 
+                    Volunteer
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -170,7 +177,7 @@ const Header = () => {
                             Dashboard
                           </NavLink>
                           {/* <NavLink
-                            to={`/dashboard/${auth?.user?.role === 1 ? "admin" : auth?.user?.role === 2 ? "doctor" : auth?.user?.role === 3 ? "nurse" : auth?.user?.role === 4 ? "volunteer" : "user"}`}
+                            to={`/dashboard/${auth?.user?.role === 0 ? "admin" : auth?.user?.role === 2 ? "doctor" : auth?.user?.role === 3 ? "nurse" : auth?.user?.role === 4 ? "volunteer" : "user"}`}
                             className="dropdown-item"
                           >
                             Dashboard

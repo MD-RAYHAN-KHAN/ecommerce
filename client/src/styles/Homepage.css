@@ -1,6 +1,7 @@
 .banner-img {
   margin-top: 60px;
 }
+
 .banner {
   position: relative;
   overflow: hidden;
@@ -13,7 +14,7 @@
   padding: 80px 0px 160px;
 }
 
-.block > h1 {
+.block>h1 {
   font-size: 60px;
   line-height: 1.2;
   letter-spacing: -1.2px;
@@ -38,6 +39,7 @@
   height: 5px;
   background: #e12454;
 }
+
 .features {
   position: relative;
   top: -70px;
@@ -72,10 +74,11 @@
 
 
 @media (max-width: 480px) {
-  .fs-h1{
+  .fs-h1 {
     font-size: 60px;
     font-weight: bolder;
   }
+
   .carousel-caption {
     position: relative;
     bottom: 0%;
@@ -88,32 +91,37 @@
 }
 
 @media (min-width: 767px) and (max-width: 992px) {
-  .fs-h1{
+  .fs-h1 {
     font-size: 40px !important;
     font-weight: bold;
   }
+
   .fs-5 {
     font-size: 1rem !important;
   }
+
   .carousel-caption {
     position: absolute;
     bottom: 6% !important;
-    left: 5% !important; 
+    left: 5% !important;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: #223A66;
     text-align: left;
   }
-  
+
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
-  .fs-h1{
+  .fs-h1 {
     font-size: 50px;
     font-weight: bolder;
   }
+
   .fs-5 {
     font-size: 1.2rem !important;
   }
+
   .carousel-caption {
     position: absolute;
     bottom: 18%;
@@ -123,6 +131,7 @@
     color: #223A66;
     text-align: left;
   }
+
   .feature-item {
     flex-basis: 33.33%;
     margin: 0px 20px;
@@ -133,6 +142,7 @@
     box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
   }
 }
+
 .carousel-caption {
   position: absolute;
   bottom: 18%;
@@ -142,13 +152,16 @@
   color: #223A66;
   text-align: left;
 }
+
 .letter-spacing {
   letter-spacing: 2px;
 }
+
 .about-img img {
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 .home-page h1 {
   color: gray;
   font-family: "Playfair Display", serif;
@@ -158,10 +171,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .home-page .card {
   background-color: rgba(128, 128, 128, 0.097);
   width: 18rem;
 }
+
 .home-page .card-name-price {
   display: flex;
   flex-direction: row;
@@ -172,6 +187,7 @@
   color: green;
   font-weight: bold;
 }
+
 .home-page button {
   border-radius: 0;
   width: 100%;
@@ -185,13 +201,14 @@
   color: rgb(90, 89, 89);
 }
 
-.home-page .card img:hover {
+/* .home-page .card img:hover {
   transform: scale(0.9);
-}
+} */
 
 .home-page .card-img-top {
   height: 300px !important;
 }
+
 /* ==================
 filters
 ============== */
@@ -208,6 +225,7 @@ filters
 .ant-checkbox-wrapper {
   margin: 2px;
 }
+
 .ant-radio-wrapper {
   margin-bottom: 5px !important;
   margin-left: 10px;
@@ -274,7 +292,8 @@ filters
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.service-item .icon > h4 {
+
+.service-item .icon>h4 {
   font-weight: bolder;
   font-family: "Exo", sans-serif;
   color: #222;
@@ -317,25 +336,67 @@ filters
 
 
 .award :hover {
-	width: 100px;
-	height: 50px;
-	transform: skew(12deg);
+  width: 100px;
+  height: 50px;
+  transform: skew(12deg);
 }
+
 /* animation-style-01 */
 .owl-item.active .animation-style-01 .slider-content h5,
 .owl-item.active .animation-style-01 .slider-content-2 h5 {
-    -webkit-animation: 800ms ease-in-out 0s normal none 1 running zoomInRight;
-    animation: 800ms ease-in-out 0s normal none 1 running zoomInRight;
+  -webkit-animation: 800ms ease-in-out 0s normal none 1 running zoomInRight;
+  animation: 800ms ease-in-out 0s normal none 1 running zoomInRight;
 }
 
 .owl-item.active .animation-style-01 .slider-content h2 {
-    -webkit-animation: 1200ms ease-in-out 0s normal none 1 running zoomInRight;
-    animation: 1200ms ease-in-out 0s normal none 1 running zoomInRight;
+  -webkit-animation: 1200ms ease-in-out 0s normal none 1 running zoomInRight;
+  animation: 1200ms ease-in-out 0s normal none 1 running zoomInRight;
 }
 
 .owl-item.active .animation-style-01 .slider-content h3,
 .owl-item.active .animation-style-01 .slider-content-2 h3 {
-    -webkit-animation: 1600ms ease-in-out 0s normal none 1 running zoomInRight;
-    animation: 1600ms ease-in-out 0s normal none 1 running zoomInRight;
+  -webkit-animation: 1600ms ease-in-out 0s normal none 1 running zoomInRight;
+  animation: 1600ms ease-in-out 0s normal none 1 running zoomInRight;
 }
 
+/* Customer Review section */
+.review-info {
+  /* flex-basis: 30.33%; */
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+/* medicine section start */
+.card {
+  overflow: hidden;
+  position: relative;
+}
+/* Styling for the picture segment */
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the card body segment */
+.card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* Hover effect: make card body visible when hovering over the picture */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}

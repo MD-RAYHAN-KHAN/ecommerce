@@ -1,5 +1,6 @@
 /* ===================================
 ========= register page  */
+
 .form-container {
   margin-top: 60px;
   display: flex;
@@ -153,10 +154,3 @@
   top: 7px;
   right: 13px;
 }
-/* .top-8{
-  top: 0px;
-}
-.right-8{
-  right: 8px;
-} */
-

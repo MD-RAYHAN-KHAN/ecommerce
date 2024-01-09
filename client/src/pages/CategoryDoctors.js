@@ -35,7 +35,7 @@ const CategoryDoctor = () => {
   };
 
   return (
-    <Layout>
+    <Layout title={"Product details - Family Care"}>
       <div className="container mt-3 Doctorcategory">
         <h4 className="text-center">DoctorCategory - {doctorcategory?.name}</h4>
         <h6 className="text-center">{doctors?.length} result found </h6>
@@ -55,7 +55,7 @@ const CategoryDoctor = () => {
                       <h5 className="card-title card-price">
                         {p.price.toLocaleString("en-US", {
                           style: "currency",
-                          currency: "USD",
+                          currency: "BDT",
                         })}
                       </h5>
                     </div>

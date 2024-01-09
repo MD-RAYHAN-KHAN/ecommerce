@@ -103,7 +103,7 @@ const DoctorCategories = () => {
   }, [checked, radio, filterDoctors]);
 
   return (
-    <Layout title={"All Categories"}>
+    <Layout title={"Doctor Categories - Faimly Care"}>
       <div className="container" style={{ marginTop: "100px" }}>
         <div className="row container">
           {doctorCategories.map((c) => (
