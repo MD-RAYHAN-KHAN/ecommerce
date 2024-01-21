@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Layout from "./../components/Layout/Layout";
 
 const Pagenotfound = () => {
@@ -10,9 +10,9 @@ const Pagenotfound = () => {
         <h2 className="pnf-heading">Oops ! Page Not Found</h2>
         <div className="con">
           <div className="btn-1">
-            {/* <Link to="/" className="pnf-btn px-5"> */}
-             <a className="btn btn-outline-dark" href="/config"> Go Back</a>
-            {/* </Link> */}
+            <Link to="/" className="btn btn-outline-dark">Go Back
+             {/* <a className="btn btn-outline-dark" href="/config"> Go Back</a> */}
+            </Link>
           </div>
         </div>
       </div>

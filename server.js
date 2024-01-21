@@ -12,6 +12,9 @@ import doctorsRoute from "./routes/doctorsRoute.js"
 import doctorCategoryRoute from "./routes/doctorCategoryRoute.js"
 import cors from "cors";
 
+// sslcommerz controller link
+// const payNow = require("./controllers/paynow.js");
+
 //configure env
 dotenv.config();
 
@@ -35,6 +38,9 @@ app.use("/api/v1/product", productRoutes);
 
 app.use("/api/v1/doctors", doctorsRoute);
 app.use("/api/v1/doctorCategory", doctorCategoryRoute);
+
+//ssl commerz api link
+// app.use("/api/payment",payNow);
 
 //rest api
 app.get("/", (req, res) => {

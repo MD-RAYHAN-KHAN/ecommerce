@@ -133,14 +133,13 @@ const HomePage = () => {
                       <span className="text-uppercase letter-spacing">Total Health care solution</span>
                       <h1 className="fs-h1 letter-spacing pt-2 slider-content-2">Your most trusted health partner</h1>
                       <p class="mb-4 pr-5 fs-5">
-                        A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
-                        aperiam maiores sunt fugit, deserunt rem suscipit placeat.
+                        Family Care is a one-stop shop for expecting families with services catered to every stage throughout their parenting journey.
                       </p>
 
                       <div className="btn-container ">
-                        <NavLink to="/doctor" className="nav-link">
+                        <NavLink to="/Nanny" className="nav-link">
                           <button className="btn-1 btn-main-2 btn-icon btn-round-full">
-                            DoctorConsultation
+                            Nanny Service
                           </button>
                         </NavLink>
                       </div>
@@ -151,7 +150,7 @@ const HomePage = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="/images/bg/slider-bg-2.2.jpg"
+                src="/images/bg/slider-bg-1.jpg"
                 className="banner-img"
                 alt="bannerimage"
                 width={"100%"}
@@ -164,14 +163,13 @@ const HomePage = () => {
                       <span className="text-uppercase letter-spacing">Total Health care solution</span>
                       <h1 className="fs-h1 letter-spacing pt-2 content-2">Your most trusted health partner</h1>
                       <p class="mb-4 pr-5 fs-5">
-                        A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
-                        aperiam maiores sunt fugit, deserunt rem suscipit placeat.
+                        We both full time and part-time baby care at home facilites
                       </p>
 
                       <div className="btn-container ">
-                        <NavLink to="/doctor" className="nav-link">
+                        <NavLink to="/Nurse" className="nav-link">
                           <button className="btn-1 btn-main-2 btn-icon btn-round-full">
-                            DoctorConsultation
+                            Child Care service
                           </button>
                         </NavLink>
                       </div>
@@ -183,7 +181,7 @@ const HomePage = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="/images/bg/slider-bg-1.jpg"
+                src="/images/bg/slider-bg-2.2.jpg"
                 className="banner-img"
                 alt="bannerimage"
                 width={"100%"}
@@ -234,10 +232,10 @@ const HomePage = () => {
                     <i className="icofont-surgeon-alt" />
                   </div>
                   <span>24 Hours Service</span>
-                  <h4 className="my-3">Video Consultation </h4>
+                  <h4 className="my-3">Consultation </h4>
                   <p className="mb-4">Get All time support for emergency.We have introduced the principle of
                     family medicine.</p>
-                  <NavLink to="/Doctor" className="btn btn-main btn-round-full">Doctor Consultation</NavLink>
+                  <NavLink to="/Doctor" className="btn btn-main btn-round-full">Consultation</NavLink>
                 </div>
                 <div className="feature-item mx-lg-4 mb-5 mb-lg-0">
                   <div className="feature-icon mb-4">
@@ -271,16 +269,15 @@ const HomePage = () => {
       {/* header info section end  */}
 
       {/* nanny section start */}
-      <section className="nanny px-3">
+      <section className="nanny px-3 py-2">
         <div className="container-fluid">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-7">
                 <div className="section-title text-center">
-                  <h2 className="fs-h2 letter-spacing">Partners who support us</h2>
+                  <h2 className="fs-h2 letter-spacing">View available Nurses​</h2>
                   <div className="divider mx-auto my-4" />
-                  <p className="">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                    molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                  <p className="">Last Update: January 19, 2024</p>
                 </div>
               </div>
             </div>
@@ -299,19 +296,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Rohima Yeasmin</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : General</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -319,19 +319,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog6.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -339,19 +342,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary : Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -359,103 +365,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div className="d-flex justify-content-center">
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamiliya Jahan</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -467,19 +392,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Rohima Yeasmin</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -487,19 +415,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog6.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary : Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -507,19 +438,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Sumiya Tisha</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -527,19 +461,118 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamiliya Jahan</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Women's Health Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div className="d-flex justify-content-center">
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog4.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rohima Yeasmin</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : General</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog6.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary : Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog4.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Tania jannat</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog4.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Kamiliya Jahan</h4>
+                      <span>Nurse</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : General</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -558,17 +591,16 @@ const HomePage = () => {
       </section>
       {/* nanny section end  */}
 
-      {/* volunteer section start */}
+      {/* nanny section start */}
       <section className="nanny px-3 mt-5">
         <div className="container-fluid">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-7">
                 <div className="section-title text-center">
-                  <h2 className="fs-h2 letter-spacing">Partners who support us</h2>
+                  <h2 className="fs-h2 letter-spacing">View available nannies​</h2>
                   <div className="divider mx-auto my-4" />
-                  <p className="">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                    molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                  <p className="">Last Update: January 20, 2024</p>
                 </div>
               </div>
             </div>
@@ -587,19 +619,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Rohima Yeasmin</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : General</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -607,19 +642,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog6.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -627,19 +665,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary : Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -647,103 +688,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div className="d-flex justify-content-center">
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="review-info d-flex col">
-                  <div className="testimonial-block style-2">
-                    <div className="testimonial-thumb">
-                      <img
-                        src="/images/blog/blog2.jpg"
-                        className="img-fluid"
-                        alt="bannerimage"
-                        width={"100%"}
-                      />
-                    </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamiliya Jahan</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -755,19 +715,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Rohima Yeasmin</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -775,19 +738,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog6.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary : Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -795,19 +761,22 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Sumiya Tisha</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -815,19 +784,118 @@ const HomePage = () => {
                   <div className="testimonial-block style-2">
                     <div className="testimonial-thumb">
                       <img
-                        src="/images/blog/blog2.jpg"
+                        src="/images/blog/blog4.jpg"
                         className="img-fluid"
                         alt="bannerimage"
                         width={"100%"}
                       />
                     </div>
-                    <div className="client-info ">
-                      <h4>Amazing service!</h4>
-                      <span>John Partho</span>
-                      <p className="text-justify">
-                        They provide great service facilty consectetur adipisicing elit. Itaque rem,
-                        praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
-                      </p>
+                    <div className="client-info">
+                      <h4>Kamiliya Jahan</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Women's Health Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div className="d-flex justify-content-center">
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog4.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rohima Yeasmin</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : General</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog6.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Kamrun Nahar</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary : Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog4.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Tania</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : Child Specialist</p>
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog4.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Kamiliya Jahan</h4>
+                      <span>Nanny</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Department : General</p>
+                        <p className="info-employee">Experience : More than 1 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -844,7 +912,7 @@ const HomePage = () => {
           </button>
         </div>
       </section>
-      {/* volunteer section end */}
+      {/* nanny section end */}
 
       {/* medicine center */}
       <section className="medicine mt-5">
@@ -853,10 +921,9 @@ const HomePage = () => {
             <div className="row justify-content-center">
               <div className="col-lg-7">
                 <div className="section-title text-center">
-                  <h2 className="fs-h2 letter-spacing">Partners who support us</h2>
+                  <h2 className="fs-h2 letter-spacing">Medicine Corner</h2>
                   <div className="divider mx-auto my-4" />
-                  <p className="">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt
-                    molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                  <p className="">Best Online Pharmacy And Health Care Platform in Bangladesh.</p>
                 </div>
               </div>
             </div>
@@ -975,6 +1042,317 @@ const HomePage = () => {
       </section>
       {/* medicine center end */}
 
+      {/* volunteer section start */}
+      <section className="nanny px-3 mt-5">
+        <div className="container-fluid">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-7">
+                <div className="section-title text-center">
+                  <h2 className="fs-h2 letter-spacing">View available Volunteer​</h2>
+                  <div className="divider mx-auto my-4" />
+                  <p className="">Last Update: January 20, 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExampleIndicators" className="carousel slide mt-3" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div className="d-flex justify-content-center">
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div className="d-flex justify-content-center">
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div className="d-flex justify-content-center">
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="review-info d-flex col">
+                  <div className="testimonial-block style-2">
+                    <div className="testimonial-thumb">
+                      <img
+                        src="/images/blog/blog2.jpg"
+                        className="img-fluid"
+                        alt="bannerimage"
+                        width={"100%"}
+                      />
+                    </div>
+                    <div className="client-info">
+                      <h4>Rayhan Shuvro</h4>
+                      <span>Delivery Boy</span>
+                      <div className="mt-5">
+                        <p className="info-employee">Experience : More than 5 years</p>
+                        <p className="info-employee">Address : Dhaka</p>
+                        <p className="info-employee">Desired job : Live-out</p>
+                        <p className="info-employee">Desired monthly salary: Negotiable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      {/* volunteer section end */}
+
       {/* about seciton start */}
       <section className="section about bg-light py-3">
         <div className="container">
@@ -1019,14 +1397,14 @@ const HomePage = () => {
       {/* about seciton end */}
 
       {/* department section start */}
-      <section className="container-fluid bg-light pt-5">
+      <section className="container-fluid bg-light pt-5 background-img-2">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-7">
               <div className="section-title text-center">
                 <h2 className="fs-h2 letter-spacing">Award winning patient care</h2>
                 <div className="divider mx-auto my-4" />
-                <p className="">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+                {/* <p className="">Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p> */}
               </div>
             </div>
           </div>
@@ -1047,7 +1425,7 @@ const HomePage = () => {
             <div className="service-item mb-4">
               <div className="icon d-flex align-items-center">
                 <i className="icofont-heart-beat-alt text-lg" />
-                <h4 className="mt-3 mb-3">Heart Disease</h4>
+                <h4 className="mt-3 mb-3">Baby Stimulation</h4>
               </div>
               <div className="content">
                 <p className="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>

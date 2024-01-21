@@ -400,3 +400,19 @@ filters
 .card:hover .card-body {
   opacity: 1;
 }
+ /* bg iamge section start */
+ .background-img{
+  background-image: url("../../public/Images/bg/nurse-bg-3.jpg"), url("../../public/Images/bg/nurse-bg-3.jpg");
+  background-color: #a8a2a2;
+}
+.background-img-2{
+  background-image: url("../../public/Images/bg/nurse-bg-1.jpg"), url("../../public/Images/bg/nurse-bg-3.jpg");
+  background-color: #a8a2a2;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+.info-employee{
+  font-size: 15px;
+  margin-top: -9px;
+}

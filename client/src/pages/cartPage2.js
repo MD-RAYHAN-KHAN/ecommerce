@@ -81,10 +81,10 @@ const CartPage = () => {
   };
   return (
     <Layout title={"Card - Family Care"}>
-      <div className=" cart-page">
+      <div className=" cart-page pt-4">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="text-center bg-light p-2 mb-1">
+            <h1 className="text-center bg-light p-2 mb-1 mt-3">
               {!auth?.user
                 ? "Hello Guest"
                 : `Hello  ${auth?.token && auth?.user?.name}`}

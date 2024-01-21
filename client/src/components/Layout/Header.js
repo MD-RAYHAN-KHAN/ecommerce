@@ -43,7 +43,7 @@ const Header = () => {
                   <img
                     src="logo-22.png"
                     className="logo"
-                    alt="Family Care"
+                    alt=" Family Care"
                     width={"70%"}
                   />
                 </div>
@@ -90,12 +90,12 @@ const Header = () => {
                     </li>
                     {categories?.map((c) => (
                       <li>
-                        {/* <Link
+                        <Link
                           className="dropdown-item"
                           to={`/category/${c.slug}`}
                         >
                           {c.name}
-                        </Link> */}
+                        </Link>
                       </li>
                     ))}
                   </ul>

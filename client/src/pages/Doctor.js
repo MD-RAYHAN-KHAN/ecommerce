@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { useNavigate } from "react-router-dom";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link} from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 // import "../styles/Homepage.css";
 import "../styles/Nannypage.css";
 
-const NursePage = () => {
+const DoctorPage = () => {
     const navigate = useNavigate();
     return (
-        <Layout title={"Nurse Service - Family Care"}>
+        <Layout title={"Doctor Service - Family Care"}>
             {/* banner image */}
             <section className="bannner-section mt-sm-5 mt-lg-4">
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
@@ -51,7 +51,7 @@ const NursePage = () => {
                         </div>
                         <div className="carousel-item">
                             <img
-                                src="/images/bg/nurse-bg-3.jpg"
+                                src="/images/bg/slider-bg-1.jpg"
                                 className="banner-img"
                                 alt="bannerimage"
                                 width={"100%"}
@@ -71,7 +71,7 @@ const NursePage = () => {
                                             <div className="btn-container ">
                                                 <NavLink to="/doctor" className="nav-link">
                                                     <button className="btn-1 btn-main-2 btn-icon btn-round-full">
-                                                        NannyConsultation
+                                                        DoctorConsultation
                                                     </button>
                                                 </NavLink>
                                             </div>
@@ -102,7 +102,7 @@ const NursePage = () => {
 
                                             <div className="btn-container">
                                                 <NavLink to="/doctor" className="nav-link">
-                                                    <button className="btn-1 btn-main-2 btn-icon btn-round-full">NannyConsultation</button>
+                                                    <button className="btn-1 btn-main-2 btn-icon btn-round-full">DoctorConsultation</button>
                                                 </NavLink>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ const NursePage = () => {
                                         <p>100% refund if you are not satisfied</p>
                                         <p>500 taka discount on our 1000 taka discount on our Regular Customer</p>
                                     </div>
-                                    <Link to="/Contact" className="btn item_button btn-outline-dark">Get Started</Link>
+                                    <Link to="/Contact" className="btn item_button btn-outline-dark">Consultation</Link>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ const NursePage = () => {
                                         <p>100% refund if you are not satisfied</p>
                                         <p>1000 taka discount on our Regular Customer</p>
                                     </div>
-                                    <Link to="/Contact" className="btn item_button_two btn-outline-dark">Get Started</Link>
+                                    <Link to="/Contact" className="btn item_button_two mt-2 btn-outline-dark">Consultation</Link>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ const NursePage = () => {
                                         <p>100% refund if you are not satisfied</p>
                                         <p>500 taka discount on our 1000 taka discount on our Regular Customer</p>
                                     </div>
-                                    <Link to="/Contact" className="btn item_button btn-outline-dark">Get Started</Link>
+                                    <Link to="/Contact" className="btn item_button btn-outline-dark">Consultation</Link>
                                 </div>
                             </div>
                         </div>
@@ -253,9 +253,9 @@ const NursePage = () => {
                             <div className="section-title text-center">
                                 <h5>*Dedicated consultant :</h5>
                                 <p>
-                                    Share all your requirements with our consultant and get minimum 3 shortlisted and pre-interviewed candidates per week.Offered free suggested replacement after one month of trial with the nurse / maid
+                                    Share all your requirements with our consultant and get minimum 3 shortlisted and pre-interviewed candidates per week.Offered free suggested replacement after one month of trial with the Doctor / maid
                                 </p>
-                                <h5>You have already found your nanny / maid ?</h5>
+                                <h5>You have already found your Doctor</h5>
                             </div>
                         </div>
                     </div>
@@ -269,9 +269,9 @@ const NursePage = () => {
                         <div className="row justify-content-center">
                             <div className="col-lg-7">
                                 <div className="section-title text-center">
-                                    <h2 className="fs-h2 letter-spacing">View available Nurses​</h2>
+                                    <h2 className="fs-h2 letter-spacing">View available Doctor</h2>
                                     <div className="divider mx-auto my-4" />
-                                    <p className="">Last Update: January 19, 2024</p>
+                                    <p className="">Last Update: January 20, 2024</p>
                                 </div>
                             </div>
                         </div>
@@ -298,13 +298,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Rohima Yeasmin</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : General</p>
                                                 <p className="info-employee">Experience : More than 5 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -321,13 +321,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Kamrun Nahar</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
                                                 <p className="info-employee">Experience : More than 1 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -344,13 +344,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Kamrun Nahar</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
                                                 <p className="info-employee">Experience : More than 1 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary : Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -367,13 +367,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Kamiliya Jahan</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
                                                 <p className="info-employee">Experience : More than 1 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -394,13 +394,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Rohima Yeasmin</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
                                                 <p className="info-employee">Experience : More than 5 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -417,13 +417,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Kamrun Nahar</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
                                                 <p className="info-employee">Experience : More than 1 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary : Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -439,14 +439,14 @@ const NursePage = () => {
                                             />
                                         </div>
                                         <div className="client-info">
-                                            <h4>Tania</h4>
-                                            <span>Nurse</span>
+                                            <h4>Sumiya Tisha</h4>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
-                                                <p className="info-employee">Experience : More than 4 years</p>
+                                                <p className="info-employee">Experience : More than 5 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -463,13 +463,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Kamiliya Jahan</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Women's Health Specialist</p>
                                                 <p className="info-employee">Experience : More than 1 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -490,13 +490,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Rohima Yeasmin</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : General</p>
                                                 <p className="info-employee">Experience : More than 5 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -513,13 +513,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Kamrun Nahar</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
                                                 <p className="info-employee">Experience : More than 1 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary : Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -535,14 +535,14 @@ const NursePage = () => {
                                             />
                                         </div>
                                         <div className="client-info">
-                                            <h4>Tania</h4>
-                                            <span>Nurse</span>
+                                            <h4>Tania jannat</h4>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : Child Specialist</p>
-                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Experience : More than 5 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary : Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -559,13 +559,13 @@ const NursePage = () => {
                                         </div>
                                         <div className="client-info">
                                             <h4>Kamiliya Jahan</h4>
-                                            <span>Nurse</span>
+                                            <span>Doctor</span>
                                             <div className="mt-5">
                                                 <p className="info-employee">Department : General</p>
                                                 <p className="info-employee">Experience : More than 1 years</p>
                                                 <p className="info-employee">Address : Dhaka</p>
                                                 <p className="info-employee">Desired job : Live-out</p>
-                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                                <Link to="/Contact" className="btn item_button_two btn-outline-dark">Consultation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -587,9 +587,9 @@ const NursePage = () => {
             {/* your nanny section start */}
             <section className="container-fluid bg-light bg-nanny py-5">
                 <div className="py-5 text-center">
-                    <h2 className="fw-bold">Your nurse is waiting for you !</h2>
+                    <h2 className="fw-bold">Your Doctor is waiting for you !</h2>
                     <p>
-                        Benefit from full access to our database of nannies and get in touch with them directly
+                        Benefit from full access to our database of Doctor and get in touch with them directly
                     </p>
                     <button className="item_button_two my-3">
                         Get Started
@@ -646,4 +646,4 @@ const NursePage = () => {
     );
 };
 
-export default NursePage;
+export default DoctorPage;

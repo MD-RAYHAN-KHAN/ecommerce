@@ -9,10 +9,10 @@ const Footer = () => {
             <div className="mb-5 mb-lg-0">
               <div className="logo mb-4 text-sm-center text-md-start">
                 <img
-                  src="logo.png"
+                  src="logo-22.png"
                   className="foote-logo"
                   alt="footer-logo"
-                  width={"20%"}
+                  width={"40%"}
                 />
               </div>
               <p className="text-justify pe-3">

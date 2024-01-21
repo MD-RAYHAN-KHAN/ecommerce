@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useNavigate } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 // import "../styles/Homepage.css";
 import "../styles/Nannypage.css";
@@ -31,7 +31,7 @@ const NannyPage = () => {
                                         <div className=" m-auto">
                                             <div className="divider mb-3 pb-2" />
                                             <span className="text-uppercase letter-spacing fw-bold">Total Health & Family Care solution</span>
-                                            <h1 className="fs-h1 letter-spacing pt-2 slider-content-2">Babysitter and Nanny Service</h1>
+                                            <h1 className="fs-h1 letter-spacing pt-2 slider-content-2">Find available nannies and maids in the BD</h1>
                                             <p class="mb-4 pr-5 fs-5 pe-5">
                                                 A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam
                                                 aperiam maiores sunt fugit, deserunt rem suscipit placeat.
@@ -40,7 +40,7 @@ const NannyPage = () => {
                                             <div className="btn-container ">
                                                 <NavLink to="/doctor" className="nav-link">
                                                     <button className="btn-1 btn-main-2 btn-icon btn-round-full">
-                                                        NannyConsultation
+                                                        Nanny Service
                                                     </button>
                                                 </NavLink>
                                             </div>
@@ -49,7 +49,7 @@ const NannyPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="carousel-item">
+                        {/* <div className="carousel-item">
                             <img
                                 src="/images/bg/slider-bg-3.jpg"
                                 className="banner-img"
@@ -80,7 +80,7 @@ const NannyPage = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="carousel-item">
                             <img
                                 src="/images/bg/slider-bg-5.jpg"
@@ -102,7 +102,7 @@ const NannyPage = () => {
 
                                             <div className="btn-container">
                                                 <NavLink to="/doctor" className="nav-link">
-                                                    <button className="btn-1 btn-main-2 btn-icon btn-round-full">NannyConsultation</button>
+                                                    <button className="btn-1 btn-main-2 btn-icon btn-round-full">Nanny Service</button>
                                                 </NavLink>
                                             </div>
                                         </div>
@@ -141,7 +141,7 @@ const NannyPage = () => {
                                 <h4 className="fw-bold">1. Explore</h4>
                             </div>
                             <div className="content">
-                                <p className="mb-4">Explore more than hundreds of profiles ready to start in the Bangladesh</p>
+                                <p className="mb-4">Explore hundreds of profiles ready to start in the Bangladesh</p>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@ const NannyPage = () => {
                                 <h4 className="fw-bold">2. Subscribe</h4>
                             </div>
                             <div className="content">
-                                <p className="mb-4">Subscribe cost Free and get access to nannies contact details</p>
+                                <p className="mb-4">Subscribe cost Free and get access to nurse contact details</p>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@ const NannyPage = () => {
                                 <h4 className="fw-bold">3. Contact</h4>
                             </div>
                             <div className="content">
-                                <p className="mb-4">Contact nannies directly – saving money time and easy to contact more than nanny</p>
+                                <p className="mb-4">Contact nannies directly – saving thousands on agency fees</p>
                             </div>
                         </div>
                     </div>
@@ -201,9 +201,7 @@ const NannyPage = () => {
                                         <p>100% refund if you are not satisfied</p>
                                         <p>500 taka discount on our partner visa services</p>
                                     </div>
-                                    <button className="item_button my-3">
-                                        Get Started
-                                    </button>
+                                    <Link to="/Contact" className="btn item_button btn-outline-dark">Get Started</Link>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +214,7 @@ const NannyPage = () => {
                                 <div className="content bg-white round-bottom p-4">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <h2 className="text-info">Taka</h2>
-                                        <h4 className="text-info ps-2">3000</h4>
+                                        <h4 className="text-info ps-2">18000</h4>
                                     </div>
                                     <div className="item-info px-3">
                                         <p>New profiles every 24h</p>
@@ -224,9 +222,7 @@ const NannyPage = () => {
                                         <p>100% refund if you are not satisfied</p>
                                         <p>500 taka discount on our partner visa services</p>
                                     </div>
-                                    <button className="item_button_two my-3">
-                                        Get Started
-                                    </button>
+                                    <Link to="/Contact" className="btn item_button_two btn-outline-dark">Get Started</Link>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +235,7 @@ const NannyPage = () => {
                                 <div className="content bg-white round-bottom p-4">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <h2 className="text-info">Taka</h2>
-                                        <h4 className="text-info ps-2">3000</h4>
+                                        <h4 className="text-info ps-2">10000</h4>
                                     </div>
                                     <div className="item-info px-3">
                                         <p>New profiles every 24h</p>
@@ -247,9 +243,7 @@ const NannyPage = () => {
                                         <p>100% refund if you are not satisfied</p>
                                         <p>500 taka discount on our partner visa services</p>
                                     </div>
-                                    <button className="item_button my-3">
-                                        Get Started
-                                    </button>
+                                    <Link to="/Contact" className="btn item_button btn-outline-dark">Get Started</Link>
                                 </div>
                             </div>
                         </div>
@@ -269,6 +263,329 @@ const NannyPage = () => {
             </section>
             {/* our plans section end  */}
 
+            {/* nurse section start */}
+            <section className="nurse px-3 mt-5">
+                <div className="container-fluid">
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-7">
+                                <div className="section-title text-center">
+                                    <h2 className="fs-h2 letter-spacing">View available Nanny</h2>
+                                    <div className="divider mx-auto my-4" />
+                                    <p className="">Last Update: January 20, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" className="carousel slide mt-3" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div className="d-flex justify-content-center">
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Rohima Yeasmin</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : General</p>
+                                                <p className="info-employee">Experience : More than 5 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog6.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Kamrun Nahar</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Kamrun Nahar</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary : Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Kamiliya Jahan</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div className="d-flex justify-content-center">
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Rohima Yeasmin</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 5 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog6.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Kamrun Nahar</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary : Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Sumiya Tisha</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 5 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Kamiliya Jahan</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Women's Health Specialist</p>
+                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div className="d-flex justify-content-center">
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Rohima Yeasmin</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : General</p>
+                                                <p className="info-employee">Experience : More than 5 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog6.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Kamrun Nahar</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary : Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Tania</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : Child Specialist</p>
+                                                <p className="info-employee">Experience : More than 5 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="review-info d-flex col">
+                                    <div className="testimonial-block style-2">
+                                        <div className="testimonial-thumb">
+                                            <img
+                                                src="/images/blog/blog4.jpg"
+                                                className="img-fluid"
+                                                alt="bannerimage"
+                                                width={"100%"}
+                                            />
+                                        </div>
+                                        <div className="client-info">
+                                            <h4>Kamiliya Jahan</h4>
+                                            <span>Nanny</span>
+                                            <div className="mt-5">
+                                                <p className="info-employee">Department : General</p>
+                                                <p className="info-employee">Experience : More than 1 years</p>
+                                                <p className="info-employee">Address : Dhaka</p>
+                                                <p className="info-employee">Desired job : Live-out</p>
+                                                <p className="info-employee">Desired monthly salary: Negotiable</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            {/* nurse section end  */}
+
             {/* your nanny section start */}
             <section className="container-fluid bg-light bg-nanny py-5">
                 <div className="py-5 text-center">
@@ -287,6 +604,16 @@ const NannyPage = () => {
             <section className="section about bg-light py-3">
                 <div className="container">
                     <div className="row align-items-center">
+                        <div className="col-lg-4 ps-lg-4">
+                            <div className="about-content pl-4 mt-4 mt-lg-0">
+                                <h2 className="title-color fs-h2">Personal care <br />&amp; healthy living</h2>
+                                <p className="mt-4 mb-5">
+                                    We provide best leading medicle service Nulla perferendis veniam deleniti
+                                    ipsum officia dolores repellat laudantium obcaecati neque.
+                                </p>
+                                <NavLink to="/Service" className="btn btn-main-2 rounded-pill py-2 px-5 btn-icon">Services..</NavLink>
+                            </div>
+                        </div>
                         <div className="col-lg-4 col-sm-6">
                             <div className="about-img">
                                 <img
@@ -313,52 +640,10 @@ const NannyPage = () => {
                                 />
                             </div>
                         </div>
-                        <div className="col-lg-4 ps-lg-4">
-                            <div className="about-content pl-4 mt-4 mt-lg-0">
-                                <h2 className="title-color fs-h2">Personal care <br />&amp; healthy living</h2>
-                                <p className="mt-4 mb-5">
-                                    We provide best leading medicle service Nulla perferendis veniam deleniti
-                                    ipsum officia dolores repellat laudantium obcaecati neque.
-                                </p>
-                                <NavLink to="/Service" className="btn btn-main-2 rounded-pill py-2 px-5 btn-icon">Services..</NavLink>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
             {/* about seciton end */}
-            <section>
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            {/* <img src="..." class="d-block w-100" alt="..."> */}
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloremque.
-                            </p>
-                        </div>
-                        <div class="carousel-item">
-                            {/* <img src="..." class="d-block w-100" alt="..."> */}
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloremque.
-                            </p>
-                        </div>
-                        <div class="carousel-item">
-                            {/* <img src="..." class="d-block w-100" alt="..."> */}
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloremque.
-                            </p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
         </Layout >
     );
 };

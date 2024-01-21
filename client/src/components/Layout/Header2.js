@@ -13,10 +13,10 @@ const Header = () => {
                     <div className="me-auto">
                         <Link to="/">
                             <img
-                                src="/logo.png"
-                                className="logo-img pt-3"
-                                alt="logo"
-                                width={"8%"}
+                                src="logo-22.png"
+                                className="logo"
+                                alt=" Family Care"
+                                width={"70%"}
                             />
                         </Link>
                     </div>
